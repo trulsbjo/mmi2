@@ -3,11 +3,33 @@
 <head>
     <title>Milepæl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+
+    <style>
+    .circular {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      background: url(img/larsmonsen.jpg) no-repeat;
+      }
+  </style>
 </head>
 
 <body>
 <!-- Fixed bars -->
+<header class="bar-title">
+  
+  <a class="button-prev" href="#">
+    Tilbake
+  </a>
+  <h1 class="title">LARS MONSEN</h1>
+  </div>
+</header>
+
 <nav class="bar-tab">
   <ul class="tab-inner">
     <li class="tab-item">
@@ -39,7 +61,54 @@
 
 <!-- Anything else - this is what scrolls -->
 <div class="content">
-    geiheiogjeogihjsodhjso
+    
+    <div class="circular"></div>
+
+    <h1>23</h1>
+    <h2>turer</h2>
+    <h1>100</h1>
+    <h2>følgere</h2>
+    <h1>42</h1>
+    <h2>følger</h2>
+
+<ul class="segmented-controller">
+  <li class="active">
+    <a href="#item1">Turer</a>
+  </li>
+  <li>
+    <a href="#item2">Favoritter</a>
+  </li>
+  <li>
+    <a href="#item3">Stats</a>
+  </li>
+</ul>
+
+
+<ul class="list">
+  <li>
+    <a href="#">
+      List item 1
+      <span class="chevron"></span>
+      <span class="count">4</span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      List item 2
+      <span class="chevron"></span>
+      <span class="count">1</span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      List item 3
+      <span class="chevron"></span>
+      <span class="count">5</span>
+    </a>
+  </li>
+</ul>
+
+
 </div>
 
 <!-- Script import -->
