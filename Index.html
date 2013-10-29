@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Milepæl</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <title>Milepæl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <link rel="stylesheet" type="text/css" href="Index.css" />
 </head>
 
 <body>
-<!-- Fixed bars -->
-<nav class="bar-tab">
-  <ul class="tab-inner">
-    <li class="tab-item active">
-      <a href="index.html">
-        <img class="tab-icon" src="img/icon-home.png">
-        <div class="tab-label">Feed</div>
-      </a>
-    </li>
-    <li class="tab-item">
-      <a href="#">
-        <img class="tab-icon" src="img/icon-profile.png">
-        <div class="tab-label">Utforsk</div>
-      </a>
-    </li>
-    <li class="tab-item">
-      <a href="#">
-        <img class="tab-icon" src="img/icon-messages.png">
-        <div class="tab-label">Opprett</div>
-      </a>
-    </li>
-    <li class="tab-item">
-      <a href="profile.html">
-        <img class="tab-icon" src="img/icon-hamburger.png">
-        <div class="tab-label">Profil</div>
-      </a>
-    </li>
-  </ul>
-</nav>
+  <!-- Fixed bars -->
 
-<!-- Anything else - this is what scrolls -->
-<div class="content">
-  <ul class="list">
-    <li>List item 1
-      <img src=touch-icons/august.png">
-    </li>
-    <li>List item 2</li>
-    <li class="list-divider">List Divider</li>
-    <li>List item 3</li>
-  </ul>
-</div>
+  <header class="bar-title">
+    <h1 class="title">FEED</h1>
+  </header>
 
-<!-- Script import -->
-<script src="ratchet.js"></script>
+  <nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item active">
+        <a href="index.html">
+          <img class="tab-icon" src="touch-icons/icon-home.png">
+          <div class="tab-label">Feed</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="#">
+          <img class="tab-icon" src="touch-icons/icon-profile.png">
+          <div class="tab-label">Utforsk</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="utforsk.hmtl">
+          <img class="tab-icon" src="touch-icons/icon-messages.png">
+          <div class="tab-label">Opprett</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="profile.html">
+          <img class="tab-icon" src="touch-icons/icon-hamburger.png">
+          <div class="tab-label">Profil</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Anything else - this is what scrolls -->
+  <div class="content">
+    <label id="header">NYHETSOPPDATERING</label>
+    <ul class="list">
+      <li class="profilepicture">
+          <img src="touch-icons\trine.png">
+          <label >Trine gikk i "Bymarka"</label>
+          <label >I går 18:45</label>
+      </li>
+      <li class="profilepicture">
+          <img src="touch-icons\geirove.png">
+          <label >Geir Ove gikk "Ila"</label>
+          <label >I går 17:15</label>
+      </li>
+      <li class="profilepicture">
+          <img src="touch-icons\maria.png">
+          <label >Maria opprettet "Byneste"</label>
+          <label >Søndag 16:00</label>
+      </li>
+      <li class="profilepicture">
+          <img src="touch-icons\larsmonsen.png">
+          <label >Lars Monsen følger deg</label>
+          <label >Lørdag 17:45</label>
+      </li>
+      <li class="profilepicture">
+          <img src="touch-icons\august.png">
+          <label >August gikk "Ila"</label>
+          <label >Fredag 15:00</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Script import -->
+  <script src="ratchet.js"></script>
 </body>
 </html>
