@@ -1,0 +1,10 @@
+.profilepicture{
+	border-color: blue;
+	border-width: 10px;
+}
+#header{
+	text-align: center;
+	width: 30px;
+	border-color: blue;
+	border-width: 10px;
+}
