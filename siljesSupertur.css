@@ -1,0 +1,13 @@
+.smallerFrame
+{
+	border-style: outset;
+	border-width: 5px;
+	border-color: red;
+	width: 75%;
+	margin-left: 12.5%;
+}
+
+.infoOmTur
+{
+	text-align: center;
+}
