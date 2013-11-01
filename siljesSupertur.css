@@ -11,3 +11,14 @@
 {
 	text-align: center;
 }
+
+.map img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.addToFavorite
+{
+	float: right;
+}
