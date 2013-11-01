@@ -49,9 +49,9 @@
 <div class="togglebarDiv">
   <div class="activeToggle switch-toggle switch-ios large-4">
     <input id="week91" name="view9" type="radio" checked>
-    <label for="week91" onclick>Turer</label>
+    <label for="week91" onclick="goToTrips();">Turer</label>
     <input id="month92" name="view9" type="radio">
-    <label for="month92" onclick>Brukere</label>
+    <label for="month92" onclick="goToUsers();">Brukere</label>
     <a></a>
   </div>
   
@@ -69,7 +69,7 @@
     </div>
   </div>
 
-  <ul class="segmented-controller">
+  <ul class="tabsInMiddle segmented-controller">
     <li class="active">
       <a href="#item1">
       <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
@@ -89,7 +89,7 @@
 </div>
 
 
-<ul>
+<ul class="listInTab">
   <li id="item1" class="list segmented-controller-item active">
     <ul>
       <li>
@@ -133,6 +133,9 @@
 </div>
 
 <!-- Script import -->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="utforsk.js"></script>
 <script src="ratchet.js"></script>
 </body>
 </html>
