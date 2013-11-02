@@ -3,6 +3,7 @@ function goToTrips(){
 	$(".timePreference").show();
 	$(".tabsInMiddle").show();
 	$(".listInTab").show();
+	$(".usersTab").css({"display" : "none"});
 }
 
 function goToUsers(){
@@ -10,4 +11,13 @@ function goToUsers(){
 	$(".timePreference").hide();
 	$(".tabsInMiddle").hide();
 	$(".listInTab").hide();
+	$(".usersTab").css({"display" : "inline"});
 }
+
+
+function showUsers(){
+	$(".usersFromSearch").css({"display":"inline"});
+
+}
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Milepæl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <link rel="stylesheet" type="text/css" href="Index.css" />
+</head>
+
+<body background="img/bluredmap.png">
+  <!-- Fixed bars -->
+
+  <header class="bar-title">
+    <h1 class="title">OPPRETT</h1>
+  </header>
+
+  <nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item active">
+        <a href="index.html">
+          <img class="tab-icon" src="touch-icons/icon-home.png">
+          <div class="tab-label">Feed</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="utforsk.html">
+          <img class="tab-icon" src="touch-icons/icon-profile.png">
+          <div class="tab-label">Utforsk</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="opprett.html">
+          <img class="tab-icon" src="touch-icons/icon-messages.png">
+          <div class="tab-label">Opprett</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="profile.html">
+          <img class="tab-icon" src="touch-icons/icon-hamburger.png">
+          <div class="tab-label">Profil</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Anything else - this is what scrolls -->
+  
+  <!-- Bruker ratchets content klasse -->
+  <div class="content">
+    <form >
+      <input id="inputfelt" type="text" placeholder="Skriv in beskrivelse av ankomst...">
+    </form>
+    <button type="button" onclick="alert('Hei din dritt!')">Start tracking</button>
+  </div>
+  <!-- Script import -->
+  <script src="ratchet.js"></script>
+</body>
+</html>

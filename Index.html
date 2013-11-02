@@ -3,6 +3,7 @@
 <head>
   <title>Milepæl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
   <link rel="stylesheet" type="text/css" href="Index.css" />
 </head>
@@ -29,7 +30,7 @@
         </a>
       </li>
       <li class="tab-item">
-        <a href="#">
+        <a href="opprett.html">
           <img class="tab-icon" src="touch-icons/icon-messages.png">
           <div class="tab-label">Opprett</div>
         </a>
@@ -44,37 +45,77 @@
   </nav>
 
   <!-- Anything else - this is what scrolls -->
+  
+  <!-- Bruker ratchets content klasse -->
   <div class="content">
-    <label id="header">NYHETSOPPDATERING</label>
+    <p id="header">NYHETSOPPDATERING</p>
+    
+    <!-- Bruker ratchets list klasse -->
     <ul class="list">
-      <li class="profilepicture">
-          <img src="touch-icons\trine.png">
-          <label >Trine gikk i "Bymarka"</label>
-          <label >I går 18:45</label>
-      </li>
-      <li class="profilepicture">
-          <img src="touch-icons\geirove.png">
-          <label >Geir Ove gikk "Ila"</label>
-          <label >I går 17:15</label>
-      </li>
-      <li class="profilepicture">
-          <img src="touch-icons\maria.png">
-          <label >Maria opprettet "Byneste"</label>
-          <label >Søndag 16:00</label>
-      </li>
-      <li class="profilepicture">
-          <img src="touch-icons\larsmonsen.png">
-          <label >Lars Monsen følger deg</label>
-          <label >Lørdag 17:45</label>
-      </li>
-      <li class="profilepicture">
-          <img src="touch-icons\august.png">
-          <label >August gikk "Ila"</label>
-          <label >Fredag 15:00</label>
-      </li>
-    </ul>
-  </div>
 
+      <li class="feedlement">
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\trine.png">
+          </div>
+          <div class="textdiv">
+            <label class="feedtext">Trine gikk i "Bymarka"</label>
+            <label class="feedtime">I går 18:45</label>
+          </div>
+        </a>
+      </li>
+
+      <li class="feedlement">
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\geirove.png">
+          </div>
+          <div class="textdiv">
+            <label class="feedtext">Geir Ove gikk "Ila"</label>
+            <label class="feedtime">I går 17:15</label>
+          </div>
+        </a>
+      </li>
+
+      <li class="feedlement">
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\maria.png">
+          </div>
+          <div class="textdiv">
+            <label class="feedtext">Maria opprettet "Byneset"</label>
+            <label class="feedtime">Søndag 16:13</label>
+          </div>
+        </a>
+      </li>
+
+      <li class="feedlement">
+        <a href="profile.html">
+          <div class="profilepicture">
+            <img src="touch-icons\larsmonsen.png">
+          </div>
+          <div class="textdiv">
+            <label class="feedtext">Lars Monsen følger deg</label>
+            <label class="feedtime">Lørdag 17:43</label>
+          </div>
+        </a>
+      </li>
+
+      <li class="feedlement">
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\august.png">
+          </div>
+          <div class="textdiv">
+            <label class="feedtext">August gikk "Ila"</label>
+            <label class="feedtime">Fredag 15:49</label>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
   <!-- Script import -->
   <script src="ratchet.js"></script>
 </body>

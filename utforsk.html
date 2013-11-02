@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Milepæl</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
     <link rel="stylesheet" type="text/css" media="all" href="toggle-switch.css" />
     <link rel="stylesheet" type="text/css" media="all" href="utforsk.css" />
@@ -130,11 +130,50 @@
   </li>
 </ul>
 
+
+<div class="usersTab" style="display: none">
+  <form>
+    <input class="searchTextfield" type="text" placeholder="søk etter brukere" onclick="changeText()">
+    <input class="searchButton" type="submit" value="søk" onclick="showUsers()" disabled="true">
+  </form>
+  <div class="usersFromSearch" style="display: none">
+    
+  <ul>
+    <li>
+      <a href="siljesSupertur.html">
+        Siljes supertur
+      <div style="float: right;">
+        2t
+      </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Blaatoppen t/r
+      <div style="float: right;">
+        50m
+      </div>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Trondermarsjen
+      <div style="float: right;">
+        9t
+      </div>
+      </a>
+    </li>
+  </ul>
+
+  </div>
+</div>
+
+
 </div>
 
 <!-- Script import -->
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-migrate-1.2.1.js"></script>
 <script src="utforsk.js"></script>
 <script src="ratchet.js"></script>
 </body>

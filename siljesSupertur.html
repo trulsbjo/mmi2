@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Milepæl</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
   <link rel="stylesheet" type="text/css" media="all" href="siljesSupertur.css" />
 </head>
@@ -48,23 +48,35 @@
 
   <!-- Anything else - this is what scrolls -->
   <div class="content">
-    <div class="smallerFrame">
-      <h2>Siljes supertur</h2>
-      <!-- Bilde for å legge til som favoritt-tur -->
-      <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="50px" height="50px">
-      <div class="infoOmTur">
-        nivå: | lett  2t  1,5km
-        <p>Fin rusletur for skikkelig overskudd!</p>
-        <a href="#" >Se bussrute</a>
-      </div>
-      <div class="map">
-        <img src="img/map.jpg" name="kartOverTur">
-      </div>
-      <a class="button-positive button-block">GAA TUR</a>
-    </div> 
+    <div class="slider">
+      <ul>
+        <li>
+          <div class="smallerFrame">
+            <h2>Siljes supertur</h2>
+            <!-- Bilde for å legge til som favoritt-tur -->
+            <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+            <div class="infoOmTur">
+              nivå: | lett  2t  1,5km
+              <p>Fin rusletur for skikkelig overskudd!</p>
+              <a href="#" >Se bussrute</a>
+            </div>
+            <div class="map">
+              <img src="img/map.jpg" name="kartOverTur">
+            </div>
+            <a class="button-positive button-block">GÅ TUR</a>
+          </div> 
+        </li>
+        <li>
+          <img src="img/map.jpg" name="kartOverTur">
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!-- Script import -->
+  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-migrate-1.2.1.js"></script>
   <script src="ratchet.js"></script>
+  <script src="siljesSupertur.js"></script>
 </body>
 </html>

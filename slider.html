@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Milepæl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="siljesSupertur.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="slider.css" />
+</head>   
+
+<body>
+  <!-- Fixed bars -->
+
+  <header class="bar-title">
+    <a class="button-prev" href="utforsk.html">
+      Utforsk
+    </a>
+    <h1 class="title">UTFORSK</h1>
+  </header>
+
+  <nav class="bar-tab">
+    <ul class="tab-inner">
+      <li class="tab-item">
+        <a href="index.html">
+          <img class="tab-icon" src="touch-icons/icon-home.png">
+          <div class="tab-label">Feed</div>
+        </a>
+      </li>
+      <li class="tab-item active">
+        <a href="utforsk.html">
+          <img class="tab-icon" src="touch-icons/icon-profile.png">
+          <div class="tab-label">Utforsk</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="utforsk.hmtl">
+          <img class="tab-icon" src="touch-icons/icon-messages.png">
+          <div class="tab-label">Opprett</div>
+        </a>
+      </li>
+      <li class="tab-item">
+        <a href="profile.html">
+          <img class="tab-icon" src="touch-icons/icon-hamburger.png">
+          <div class="tab-label">Profil</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+    <div id="slideshow-wrap">
+        <input type="radio" id="button-1" name="controls" checked="checked"/>
+        <label for="button-1"></label>
+        <input type="radio" id="button-2" name="controls"/>
+        <label for="button-2"></label>
+        <input type="radio" id="button-3" name="controls"/>
+        <label for="button-3"></label>
+        <input type="radio" id="button-4" name="controls"/>
+        <label for="button-4"></label>
+        <input type="radio" id="button-5" name="controls"/>
+        <label for="button-5"></label>
+        <label for="button-1" class="arrows" id="arrow-1">></label>
+        <label for="button-2" class="arrows" id="arrow-2">></label>
+        <label for="button-3" class="arrows" id="arrow-3">></label>
+        <label for="button-4" class="arrows" id="arrow-4">></label>
+        <label for="button-5" class="arrows" id="arrow-5">></label>
+        <div id="slideshow-inner">
+            <ul>
+                <li id="slide1">
+                    <div class="smallerFrame">
+                    <h2>Siljes supertur</h2>
+                    <!-- Bilde for å legge til som favoritt-tur -->
+                    <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+                    <div class="infoOmTur">
+                      nivå: | lett  2t  1,5km
+                      <p>Fin rusletur for skikkelig overskudd!</p>
+                      <a href="#" >Se bussrute</a>
+                    </div>
+                    <div class="map">
+                      <img src="img/map.jpg" name="kartOverTur">
+                    </div>
+                    <a class="button-positive button-block">GÅ TUR</a>
+                  </div> 
+                </li>
+                <li id="slide2">
+                  <div class="smallerFrame">
+                    <h2>Siljes supertur</h2>
+                    <!-- Bilde for å legge til som favoritt-tur -->
+                    <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+                    <div class="infoOmTur">
+                      nivå: | lett  2t  1,5km
+                      <p>Fin rusletur for skikkelig overskudd!</p>
+                      <a href="#" >Se bussrute</a>
+                    </div>
+                    <div class="map">
+                      <img src="img/map.jpg" name="kartOverTur">
+                    </div>
+                    <a class="button-positive button-block">GÅ TUR</a>
+                  </div> 
+                </li>
+                <li id="slide3">
+                    <div class="smallerFrame">
+                    <h2>Siljes supertur</h2>
+                    <!-- Bilde for å legge til som favoritt-tur -->
+                    <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+                    <div class="infoOmTur">
+                      nivå: | lett  2t  1,5km
+                      <p>Fin rusletur for skikkelig overskudd!</p>
+                      <a href="#" >Se bussrute</a>
+                    </div>
+                    <div class="map">
+                      <img src="img/map.jpg" name="kartOverTur">
+                    </div>
+                    <a class="button-positive button-block">GÅ TUR</a>
+                  </div> 
+                </li>
+                <li id="slide4">
+                    <div class="smallerFrame">
+                    <h2>Siljes supertur</h2>
+                    <!-- Bilde for å legge til som favoritt-tur -->
+                    <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+                    <div class="infoOmTur">
+                      nivå: | lett  2t  1,5km
+                      <p>Fin rusletur for skikkelig overskudd!</p>
+                      <a href="#" >Se bussrute</a>
+                    </div>
+                    <div class="map">
+                      <img src="img/map.jpg" name="kartOverTur">
+                    </div>
+                    <a class="button-positive button-block">GÅ TUR</a>
+                  </div> 
+                </li>
+                <li id="slide5">
+                    <div class="smallerFrame">
+                    <h2>Siljes supertur</h2>
+                    <!-- Bilde for å legge til som favoritt-tur -->
+                    <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+                    <div class="infoOmTur">
+                      nivå: | lett  2t  1,5km
+                      <p>Fin rusletur for skikkelig overskudd!</p>
+                      <a href="#" >Se bussrute</a>
+                    </div>
+                    <div class="map">
+                      <img src="img/map.jpg" name="kartOverTur">
+                    </div>
+                    <a class="button-positive button-block">GÅ TUR</a>
+                  </div> 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Script import -->
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-migrate-1.2.1.js"></script>
+<script src="ratchet.js"></script>
+<script src="siljesSupertur.js"></script>
+</body>
+</html>
