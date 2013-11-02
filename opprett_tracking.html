@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Milepæl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <link rel="stylesheet" type="text/css" href="opprett_tracking.css" />
+</head>
+
+<body >
+  <div id="1" class="dummiebilde">
+    <input id="bilde1" type="image" src="img/track1.png" onClick="next()"/>
+  </div>
+
+  <div id="2" class="dummiebilde" style="display:none;">
+    <img id="bilde2" src="img/track2.png" >
+  </div>
+  
+  <div id="milepalform" style="display:none;"> 
+    <p>NY MILEPÆL</p>
+    <form >
+     <input type="text" placeholder="Tittel..."><br>
+     <input type="text" placeholder="Beskrivelse...">
+   </form>
+   <div id="milepalknapper">
+      <button id="kryssknapp" onClick="closeForm()">KRYSS</button>
+      <button id="bildeknapp">BILDE</button>
+      <button id="okknapp" onClick="okForm()">OK</button>
+   </div>
+ </div>
+
+
+ <div id="knapper">
+  <button id="avslutt" onClick="exit()">Avslutt</button>
+  <button id="milepal" onClick="openForm()">Milepæl</button>
+</div>
+
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-migrate-1.2.1.js"></script>
+<script src="opprett_tracking.js"></script>
+<script src="ratchet.js"></script>
+
+</body>
+</html>
