@@ -17,7 +17,8 @@ function goToUsers(){
 
 function showUsers(){
 	$(".usersFromSearch").css({"display":"inline"});
-
+	$("#week91").prop('checked', false);
+	$("#month92").prop('checked', true);
 }
 
 
