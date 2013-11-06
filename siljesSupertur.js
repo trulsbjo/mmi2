@@ -13,10 +13,17 @@ function startTracking(){
 	$(".bar-tab").remove();
 	$(".slider").hide();
 	$(".content").css({
-		"background-image":"url('img/map.jpg')",
+		"background-image":"url('img/supertur.png')",
 		"-webkit-background-size": "cover",
   		"-moz-background-size": "cover",
  		"-o-background-size": "cover",
   		"background-size": "cover"
 	});
+	$(".avsluttTurButton").show();
+}
+
+function goToUtforsk(){
+	if(confirm("Er du sikker på at du vil avslutte turen?")){
+		window.location.href = "utforsk.html"
+	}
 }
