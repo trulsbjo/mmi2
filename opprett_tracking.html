@@ -24,16 +24,31 @@
      <input type="text" placeholder="Beskrivelse...">
    </form>
    <div id="milepalknapper">
-      <button id="kryssknapp" onClick="closeForm()">KRYSS</button>
+      <button id="kryssknapp" onClick="closeMilepal()">KRYSS</button>
       <button id="bildeknapp">BILDE</button>
-      <button id="okknapp" onClick="okForm()">OK</button>
+      <button id="okknapp" onClick="setMilepal()">OK</button>
+   </div>
+ </div>
+
+   <div id="avsluttform" style="display:none;"> 
+    <form >
+     <input type="text" placeholder="Tittel på tur..."><br>
+     <div id="datatur">
+        <p id="lengde">16km</p>
+        <p id="tid">93min</p>
+     </div>
+     <input type="text" placeholder="Beskrivelse...">
+   </form>
+   <div id="milepalknapper">
+      <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
+      <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
    </div>
  </div>
 
 
  <div id="knapper">
-  <button id="avslutt" onClick="exit()">Avslutt</button>
-  <button id="milepal" onClick="openForm()">Milepæl</button>
+  <button id="avsluttknapp" onClick="exit()">Avslutt</button>
+  <button id="milepalknapp" onClick="openMilepal()">Milepæl</button>
 </div>
 
 <script src="jquery-1.10.2.js"></script>
