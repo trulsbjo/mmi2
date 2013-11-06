@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="opprett_tracking.css" />
 </head>
 
-<body >
+<body>
   <div id="1" class="dummiebilde">
     <input id="bilde1" type="image" src="img/track1.png" onClick="next()"/>
   </div>
@@ -24,35 +24,36 @@
      <input type="text" placeholder="Beskrivelse...">
    </form>
    <div id="milepalknapper">
-      <button id="kryssknapp" onClick="closeMilepal()">KRYSS</button>
-      <button id="bildeknapp">BILDE</button>
-      <button id="okknapp" onClick="setMilepal()">OK</button>
-   </div>
- </div>
+    <button id="kryssknapp" onClick="closeMilepal()">KRYSS</button>
+    <button id="bildeknapp">BILDE</button>
+    <button id="okknapp" onClick="setMilepal()">OK</button>
+  </div>
+</div>
 
-   <div id="avsluttform" style="display:none;"> 
-    <form >
-     <input type="text" placeholder="Tittel på tur..."><br>
-     <div id="datatur">
-        <p id="lengde">16km</p>
-        <p id="tid">93min</p>
-     </div>
-     <input type="text" placeholder="Beskrivelse...">
-   </form>
-   <div id="milepalknapper">
-      <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
-      <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
-   </div>
- </div>
+<div id="avsluttform" style="display:none;"> 
+  <form >
+   <input type="text" placeholder="Tittel på tur..."><br>
+   <div id="datatur">
+    <p id="lengde">16km</p>
+    <p id="tid">93min</p>
+  </div>
+  <input type="text" placeholder="Beskrivelse...">
+</form>
+<div id="milepalknapper">
+  <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
+  <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
+</div>
+</div>
 
 
- <div id="knapper">
+<div id="knapper">
   <button id="avsluttknapp" onClick="exit()">Avslutt</button>
   <button id="milepalknapp" onClick="openMilepal()">Milepæl</button>
 </div>
 
-<script src="jquery-1.10.2.js"></script>
-<script src="jquery-migrate-1.2.1.js"></script>
+<script src="jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+<script src="jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+
 <script src="opprett_tracking.js"></script>
 <script src="ratchet.js"></script>
 

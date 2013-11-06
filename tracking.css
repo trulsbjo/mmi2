@@ -1,0 +1,33 @@
+.pep{ 
+	width: 40px; 
+	height: 40px; 
+	background: blue; 
+	z-index: 10; 
+	top: 50%;
+	left: 50%;
+}
+.droppable{   
+	width: 100px; 
+	height: 100px; 
+	border: 5px solid #ccc;
+	position: absolute;
+}
+
+.droppable.milepal  { 
+	top: 50%; 
+	left:10%; 
+}
+
+.droppable.endepunkt  { 
+	top: 50%; 
+	right:10%; 
+}
+
+.pep-dpa{ 
+	border-color: blue; 
+	background: yellow 
+}
+.backgrounddiv{
+	height: 100%;
+	width: 100%;
+}
