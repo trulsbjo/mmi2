@@ -2,9 +2,10 @@
 	width: 40px; 
 	height: 40px; 
 	background: blue; 
-	z-index: 10; 
+	z-index: 5; 
 	top: 50%;
-	left: 50%;
+	left: 45%;
+	position: absolute;
 }
 .droppable{   
 	width: 100px; 
@@ -14,20 +15,36 @@
 }
 
 .droppable.milepal  { 
-	top: 50%; 
+	top: 45%; 
 	left:10%; 
 }
 
 .droppable.endepunkt  { 
-	top: 50%; 
+	top: 45%; 
 	right:10%; 
 }
 
 .pep-dpa{ 
 	border-color: blue; 
-	background: yellow 
+	background: yellow;
+	width: 140px;
+	height: 140px;
 }
 .backgrounddiv{
 	height: 100%;
 	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+#avsluttform{
+	position: fixed;
+	margin-top: 50%;
+	margin-left: 25%;
+}
+
+#milepalform{
+	position: fixed;
+	margin-top: 50%;
+	margin-left: 25%;
 }
