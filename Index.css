@@ -11,6 +11,7 @@
 .profilepicture{
 	width: 100px;
 	height: 100px;
+	float: left;
 }
 
 .profilepicture img{
@@ -20,7 +21,9 @@
 
 }
 .textdiv{
-
+	float: left;
+	padding: 25px 0px 25px 35px;
+	line-height: 25px;
 }
 .feedtext{
 
