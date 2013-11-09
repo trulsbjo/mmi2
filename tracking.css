@@ -1,9 +1,25 @@
+body {
+	background: white!important;
+}
+
+h1#add_landmark {
+	width: 100%;
+	padding: 10px;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
 .pep{ 
 	border-radius: 50%;
 	width: 40px; 
 	height: 40px; 
-	opacity: 0.4;
-	background: green; 
+	opacity: 0.9;
+	background: #39C099; 
 	z-index: 5; 
 	top: 50%;
 	left: 45%;
@@ -56,16 +72,28 @@
 }
 
 .milepalform{
-	top: 5%;
+	/*top: 5%;
 	left: 5%;
 	right: 5%;
-	bottom: 5%;
+	bottom: 5%;*/
 	background-color: white;
 }
 
 .turform{
+	color: #444;
 	display:none;
 	position: fixed;
-	margin-top: 50%;
-	margin-left: 25%;
+	margin-top: 100px;
+	left: 50%;
+	margin-left: -120px;
+	background: white;
+	width: 200px;
+	padding: 20px;
 }
+
+.turform form {
+}
+
+
+
+
