@@ -245,7 +245,7 @@ a {
 /* Bar docked to bottom used for primary app navigation */
 .bar-tab {
   bottom: 0;
-  height: 50px;
+  height: 51px;
   padding: 0;
   background-color: #393939;
   background-image: -webkit-linear-gradient(top, #393939 0, #2b2b2b 100%);
@@ -525,7 +525,7 @@ a {
 -------------------------------------------------- */
 
 /* Remove usual bullet styles from list */
-.profile .list {
+.profile .list, .discover .list {
   margin-bottom: -10px;
   list-style: none;
   background: white;
@@ -535,21 +535,22 @@ a {
 }
 
 /* Pad each list item and add dividers */
-.profile .list li {
+.profile .list li, .discover .list li {
   position: relative;
   padding: 20px 30px 20px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   height: 22px;
   margin-left: 16px;
+  list-style: none;
 }
 
 /* Give top border to first list items */
- .profile .list li:first-child {
-  border-top: 1px solid rgba(0, 0, 0, .1);
+ .profile .list li:first-child, .discover .list li:first-child {
+  border-top: 0px solid rgba(0, 0, 0, .1);
 }
 
 /* If a list of links, make sure the child <a> takes up full list item tap area (want to avoid selecting child buttons though) */
-.profile .list li > a:not([class*="button"]) {
+.profile .list li > a:not([class*="button"]), .discover .list li > a:not([class*="button"]) {
   position: relative;
   display: block;/*
   padding: inherit;*/
@@ -988,13 +989,14 @@ button.button-block {
 
 /* Section within controller */
 .segmented-controller li {
-  overflow: hidden;
+ /* overflow: hidden;*/
   text-align: center;
   white-space: nowrap;
   border-left: 1px solid #c9474d;
   box-shadow: inset 1px 0 rgba(255, 255, 255, .5);
   -webkit-box-flex: 1;
           box-flex: 1;
+  position: relative;
 }
 
 /* Link that fills each section */
@@ -1215,8 +1217,8 @@ button.button-block {
 
 /* Outer wrapper for slider */
 .slider {
-  overflow: hidden;
-  background-color: #fff;
+  
+  background-color: none;
 }
 
 /* Inner wrapper for slider (width of all slides together) */

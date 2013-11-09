@@ -1,14 +1,15 @@
 function goToTrips(){
-	$(".difficultyPreference").show();
-	$(".timePreference").show();
+	$("#difficultyPreference").show();
+	$("#timePreference").show();
 	$(".tabsInMiddle").show();
 	$(".listInTab").show();
 	$(".usersTab").css({"display" : "none"});
+	$(".usersFromSearch").css({"display" : "none"});
 }
 
 function goToUsers(){
-	$(".difficultyPreference").hide();
-	$(".timePreference").hide();
+	$("#difficultyPreference").hide();
+	$("#timePreference").hide();
 	$(".tabsInMiddle").hide();
 	$(".listInTab").hide();
 	$(".usersTab").css({"display" : "inline"});
@@ -16,7 +17,7 @@ function goToUsers(){
 
 
 function showUsers(){
-	$(".usersFromSearch").css({"display":"inline"});
+	$(".usersFromSearch").css({"display":"block"});
 	$("#week91").prop('checked', false);
 	$("#month92").prop('checked', true);
 }

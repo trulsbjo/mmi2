@@ -104,7 +104,7 @@
       padding: 0; }
   .switch-toggle {
     display: block;
-    height: 30px;
+    height: 40px;
     /* Outline the toggles when the inputs are focused
 	 */
     position: relative;
@@ -122,7 +122,7 @@
       -moz-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
     .switch-toggle label, .switch-toggle > span {
-      line-height: 30px;
+      line-height: 40px;
       vertical-align: middle; }
     .switch-toggle input:focus ~ a, .switch-toggle input:focus + label {
       outline: 1px dotted #888888; }
@@ -280,20 +280,23 @@
       opacity: 1;
       color: white; }
   .switch-ios.switch-toggle {
-    background-color: #fafafa;
-    border: 1px solid lightgrey;
+    background-color: #c9474d;
+    border: 1px solid #c9474d;
     border-radius: 30px;
-    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; }
+    }
     .switch-ios.switch-toggle a {
-      background-color: #53d76a;
+      background-color: #ec545a;
       border-radius: 25px;
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      transition: all 0.3s ease-out; 
+      font-size: 16px
+      }
     .switch-ios.switch-toggle label {
-      color: #868686; }
+      font-size: 16px;
+      color: #ec545a; }
   .switch-ios input:checked + label {
-    color: #3a3a3a; } }
+    color: white; } }
 
 /* Bugfix for older Webkit, including mobile Webkit. Adapted from
  * http://css-tricks.com/webkit-sibling-bug/

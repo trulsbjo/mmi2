@@ -60,31 +60,54 @@
 
 
 .segmented-controller li img {
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 }
 
-.list_header {
+.list_header_wrap {
 	position: absolute;
-	bottom: -33px;
+	bottom: -29px;
 	background: rgba(255,255,255,0.9);
 	color: #c9474d;
 	z-index: 99;
 	height: 30px;
 	width: 100%;
-	font-size: 25px;
 	font-weight: normal;
 	text-transform: uppercase;
 	text-align: left;
-	padding: 5px 26px;
 	text-shadow: none;
 }
 
-.segmented-controller li .list_header {
+
+
+.segmented-controller li span.header {
 	display: none;
+	color: #c9474d;
+	font-size: 20px;
+	font-weight: normal;
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	text-transform: uppercase;
+	bottom: -27px;
 }
 
-.segmented-controller li.active .list_header {
+.segmented-controller li.active span.header {
 	display: block;
+}
+
+span.header.turer {
+	width: 90px;
+	margin-left: -45px;
+}
+
+span.header.favoritter {
+	width: 120px;
+	margin-left: -60px;
+}
+
+span.header.stats {
+	width: 80px;
+	margin-left: -40px;
 }
 
