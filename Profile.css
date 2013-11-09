@@ -1,26 +1,40 @@
 .content {
-	margin-top: 454px;
+	margin-top: 308px;
 }
 
 
 
 .circular {
       margin: auto;
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       border-radius: 100px;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       background: url(img/larsmonsen.jpg) no-repeat;
-      margin-top: 70px;
+      background-size: 100%;
+      margin-top: 60px;
+
       }
 
 #info_wrap {
-	width: 300px;
+	width: 200px;
 	height: 50px;
 	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 100px
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#info_wrap h1 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+#info_wrap h2 {
+	font-size: 14px;
+	font-weight: normal;
 }
 
 #info_wrap div {
@@ -29,3 +43,48 @@
 	float: left;
 	text-align: center;
 }
+
+#follow {
+	width: 80px;
+	padding: 5px 10px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	color: rgba(0,0,0,0.2);
+	border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+
+.segmented-controller li img {
+	width: 60px;
+	height: 60px;
+}
+
+.list_header {
+	position: absolute;
+	bottom: -33px;
+	background: rgba(255,255,255,0.9);
+	color: #c9474d;
+	z-index: 99;
+	height: 30px;
+	width: 100%;
+	font-size: 25px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 5px 26px;
+	text-shadow: none;
+}
+
+.segmented-controller li .list_header {
+	display: none;
+}
+
+.segmented-controller li.active .list_header {
+	display: block;
+}
+
