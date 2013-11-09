@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
     <link rel="stylesheet" type="text/css" media="all" href="toggle-switch.css" />
     <link rel="stylesheet" type="text/css" media="all" href="utforsk.css" />
+    <link href="simple-slider.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -18,26 +19,22 @@
   <ul class="tab-inner">
     <li class="tab-item">
       <a href="index.html">
-        <img class="tab-icon" src="img/icon-home.png">
-        <div class="tab-label">Feed</div>
+        <img class="tab-icon" src="img/ikoner/nav_feed.svg">
       </a>
     </li>
     <li class="tab-item active">
       <a href="utforsk.html">
-        <img class="tab-icon" src="img/icon-profile.png">
-        <div class="tab-label">Utforsk</div>
+        <img class="tab-icon" src="img/ikoner/nav_utforsk_aktiv.svg">
       </a>
     </li>
     <li class="tab-item">
       <a href="opprett.html">
-        <img class="tab-icon" src="img/icon-messages.png">
-        <div class="tab-label">Opprett</div>
+        <img class="tab-icon" src="img/ikoner/nav_opprett.svg">
       </a>
     </li>
     <li class="tab-item">
       <a href="profile.html">
-        <img class="tab-icon" src="img/icon-hamburger.png">
-        <div class="tab-label">Profil</div>
+        <img class="tab-icon" src="img/ikoner/nav_profil.svg">
       </a>
     </li>
   </ul>
@@ -55,34 +52,35 @@
     <a></a>
   </div>
   
-  <div class="difficultyPreference">
-    Vanskelighet:
-    <div class="togglebarForDifficulty" >
-      
+  <div id="difficultyPreference">
+    <div style="float: left"> Vanskelighet: </div>
+    <div id="sliderbarForDifficulty" style="float: left>
+      <input type="text" data-slider="true" data-slider-snap="true" data-slider-values="0,10,20,30" data-slider-highlight="true" ">
     </div>
   </div>
 
-  <div class="timePreference">
-    Tid:
-    <div id="sliderbarForTime" >
-      <div id="time"></div>
+  <div id="timePreference">
+    <div style="float: left"> Tid: </div>
+    <div class="containerForTime">
+      <input id="sliderbarForTime" type="text" placeholder="X" disabled>
+      <div class="mover"></div>
     </div>
   </div>
 
-  <ul class="tabsInMiddle segmented-controller">
+  <ul class="tabsInMiddle segmented-controller" >
     <li class="active">
       <a href="#item1">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
+      <img src="img/ikoner/utforsk_naerheten.svg" style="width: 50px; height: 50px">
       </a>
     </li>
     <li>
       <a href="#item2">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
+      <img src="img/ikoner/bruker_favoritt.svg" style="width: 50px; height: 50px">
       </a>
     </li>
     <li>
       <a href="#item3">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
+      <img src="img/ikoner/utforsk_sok.svg" style="width: 50px; height: 50px">
       </a>
     </li>
   </ul>
@@ -231,5 +229,6 @@
 <script src="jquery-migrate-1.2.1.js"></script>
 <script src="utforsk.js"></script>
 <script src="ratchet.js"></script>
+<script src="simple-slider.js"></script>
 </body>
 </html>

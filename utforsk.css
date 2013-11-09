@@ -1,0 +1,24 @@
+.containerForTime
+{
+	position: relative;
+}
+
+#sliderbarForTime
+{
+	border-style: solid;
+	border-width: medium;
+	height: 30px;
+	width: 250px;
+	margin-left: 15%;
+	border-radius: 25px;
+	
+}
+
+.mover
+{
+	border-style: solid;
+	border-width: medium;
+	border-radius: 25px;
+	height: 20px;
+	width: 20px;
+}

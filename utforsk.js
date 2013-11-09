@@ -21,11 +21,8 @@ function showUsers(){
 	$("#month92").prop('checked', true);
 }
 
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
+
+$("#sliderbarForDifficulty").bind("slider:changed", function (event, data) {
+	console.log(data.value);
+});
+
