@@ -1,10 +1,10 @@
 .slider {
-  width: 170px;
+  width: 100px;
   float: right;
 }
 
 #sliderbarForTime-slider {
-  width: 250px;
+  width: 180px;
 }
 
 .slider > .dragger {
