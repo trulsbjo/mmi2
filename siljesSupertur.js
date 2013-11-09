@@ -25,9 +25,11 @@ function startTracking(){
 }
 
 function goToUtforsk(){
-	if(confirm("Er du sikker på at du vil avslutte turen?")){
+/*	if(confirm("Er du sikker på at du vil avslutte turen?")){
 		window.location.href = "utforsk.html"
-	}
+	} */
+
+	$("#avsluttTurForm").show();
 }
 
 function showMilestone(){
@@ -43,4 +45,12 @@ function backTo5minImage(){
 function milestonePopup(){
 	$("#backgroundMap5min2").hide();
 	$("#kultTreImage2").show();
+}
+
+function showMilestoneForm(){
+	$("#milepalform").show();
+}
+
+function avsluttTur(){
+	alert("denne må implementeres");
 }
