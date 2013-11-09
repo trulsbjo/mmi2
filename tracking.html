@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UFT-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milepæl</title>
+  <script src="jquery.pep.js-master/libs/jquery/jquery.js"></script>
+  <script src="jquery.pep.js-master/src/jquery.pep.js"></script>
+  <script src="tracking.js"></script>
+  <link rel="stylesheet" type="text/css" href="tracking.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+</head>
+<body>
+
+  <div>
+    <input class="backgrounddiv" type="image" src="img/track1.png" id="bilde1"/>
+    <div class="pep"></div>
+    <div class="droppable milepal" style="display:none;" id="milepal"></div>
+    <div class="droppable endepunkt" style="display:none;" id="endepunkt"></div>
+    <div class="datadisplay">
+      <div>
+        <p id="tid" class="datatext">tid: 5min</p>
+      </div>
+      <div>
+        <p id"strekning" class="datatext">strekning: 1km</p>
+        <p id="moh" class="datatext">m.o.h: 50m</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPPLÆRINGS FORM -->
+
+  <!-- MILEPÆL FORM -->
+  <div class="turform milepalform" id="milepalform">
+    <div>
+      <!-- ICON -->
+      <p>NY MILEPÆL</p>
+    </div>
+    <form >
+     <input type="text" placeholder="Tittel..."><br>
+     <input type="text" placeholder="Kommentar...">
+   </form>
+   <div>
+    <p>Ta bilde: </p>
+    <button id="bildeknapp" onClick="openCamera()">BILDE</button>
+  </div>
+  <div>
+    <button id="kryssknapp" onClick="closeMilepal()">AVBRYT</button>
+    <button id="okknapp" onClick="setMilepal()">LEGG TIL</button>
+  </div>
+</div>
+
+<!-- AVSLUTT FORM FORM -->
+<div class="turform" id="avsluttform"> 
+  <form >
+   <input type="text" placeholder="Tittel på tur..."><br>
+   <div id="datatur">
+    <p id="avsluttlengde">16km</p>
+    <p id="avslutttid">93min</p>
+  </div>
+  <input type="text" placeholder="Beskrivelse...">
+</form>
+<div id="milepalknapper">
+  <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
+  <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
+</div>
+</div>
+
+</body>
+
+
+</html>

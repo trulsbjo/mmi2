@@ -61,17 +61,43 @@
               <a href="#" >Se bussrute</a>
             </div>
             <div class="map">
-              <img src="img/map.jpg" name="kartOverTur">
+              <img src="img/map.png" name="kartOverTur">
             </div>
             <a class="button-positive button-block" onclick="startTracking()">GÅ TUR</a>
           </div> 
         </li>
         <li>
-          <img src="img/map.jpg" name="kartOverTur">
+          <div class="smallerFrame">
+            <h2>Siljes supertur</h2>
+            <!-- Bilde for å legge til som favoritt-tur -->
+            <img src="img/star_empty.jpg" class="addToFavorite" name="star" width="25px" height="25px" onclick="addToFavorite()">
+            <div class="infoOmTur">
+              nivå: | lett  2t  1,5km
+              <p>Fin rusletur for skikkelig overskudd!</p>
+              <a href="#" >Se bussrute</a>
+            </div>
+            <div class="map">
+              <img src="img/map.png" name="kartOverTur">
+            </div>
+            <a class="button-positive button-block" onclick="startTracking()">GÅ TUR</a>
+          </div> 
         </li>
       </ul>
     </div>
- 
+
+    <div class="avsluttTurButton" style="display: none">
+      <a id="linkToUtforsk" class="button-negative" onclick="goToUtforsk()">Avslutt</a>
+    </div>
+
+    <div class="tripImages" >
+      <div class="scenario3.2">
+        <img id="backgroundMap5min" src="img/5min.png" style="display: none" onclick="showMilestone()">
+        <img id="kultTreImage" src="img/kultTre.png" style="display: none" onclick="backTo5minImage()">
+        <img id="backgroundMap5min2" src="img/5min.png" style="display: none" onclick="milestonePopup()">
+        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none">
+      </div>
+    </div>
+
   </div>
 
 <!-- Script import -->

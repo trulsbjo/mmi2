@@ -1,0 +1,71 @@
+.pep{ 
+	border-radius: 50%;
+	width: 40px; 
+	height: 40px; 
+	opacity: 0.4;
+	background: green; 
+	z-index: 5; 
+	top: 50%;
+	left: 45%;
+	position: absolute;
+}
+.droppable{   
+	border-radius: 50%;
+	width: 100px; 
+	height: 100px; 
+	background: #707070;
+	opacity: 0.4;
+	position: absolute;
+}
+
+.droppable.milepal  { 
+	top: 45%; 
+	left:10%; 
+}
+
+.droppable.endepunkt  { 
+	top: 45%; 
+	right:10%; 
+}
+
+.pep-dpa{ 
+	width: 120px;
+	height: 120px;
+}
+.backgrounddiv{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+.datadisplay{
+	bottom: 5%;
+	width: 100%;
+	background-color: #707070;
+	opacity: 0.4;
+	position: absolute;
+}
+
+.datatext{
+	color: white;
+}
+
+#avsluttform{
+
+}
+
+.milepalform{
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	background-color: white;
+}
+
+.turform{
+	display:none;
+	position: fixed;
+	margin-top: 50%;
+	margin-left: 25%;
+}
