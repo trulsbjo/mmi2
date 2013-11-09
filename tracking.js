@@ -1,5 +1,5 @@
 var teller = 1;
-var filterVal = 'blur(0px)';
+var filterValMap = 'blur(0px)';
 
 function exit(){
 	var exitBoolean = confirm("Sikker på at du vil avslutte?");
@@ -8,43 +8,39 @@ function exit(){
 		$("#avsluttform").css({"display" : "inline"});
 		$("#bilde"+teller).prop('disabled', true);
 	} else {
-		unBlurMap();
+		blurMap(0);
 	}
 }
 
 function openMilepal(){
-	blurMap();
-	disableButton("avsluttknapp", true);
 	$("#milepalform").css('z-index', 10);
 	$("#milepalform").css({"display" : "inline"});
 	$("#bilde"+teller).prop('disabled', true);
 }
 
-function disableButton(nameOfButton, booleanButton){
-	$("#"+ nameOfButton).prop('disabled', booleanButton);
+function closeMilepal(){
+	$("#milepalform").css({"display" : "none"});
+	blurMap(0);
 }
 
-function unBlurMap(){
-	filterVal = 'blur(0px)';
+function blurMap(number){
+	filterValMap = 'blur('+ number +'px)';
 	$("#bilde"+teller).css({
-		'filter': filterVal,
-		'-webkit-filter': filterVal,
-		'-moz-filter': filterVal,
-		'-o-filter': filterVal,
-		'-ms-filter': filterVal
+		'filter': filterValMap,
+		'-webkit-filter': filterValMap,
+		'-moz-filter': filterValMap,
+		'-o-filter': filterValMap,
+		'-ms-filter': filterValMap
+	});
+	$(".datadisplay").css({
+		'filter': filterValMap,
+		'-webkit-filter': filterValMap,
+		'-moz-filter': filterValMap,
+		'-o-filter': filterValMap,
+		'-ms-filter': filterValMap
 	});
 }
 
-function blurMap(){
-	filterVal = 'blur(2px)';
-	$("#bilde"+teller).css({
-		'filter': filterVal,
-		'-webkit-filter': filterVal,
-		'-moz-filter': filterVal,
-		'-o-filter': filterVal,
-		'-ms-filter': filterVal
-	});
-}
 
 function showOptions(showBoolean){
 	if(showBoolean){
@@ -53,14 +49,11 @@ function showOptions(showBoolean){
 	} else {
 		$("#milepal").css({"display" : "none"});
 		$("#endepunkt").css({"display" : "none"});
-		centerPep();
+		blurMap(0);
 	}
 
 }
 
-function centerPep(){
-	$('.pep').css({"top": "50%", "left": "45%"});
-}
 
 $(document).ready(function(){
 	$('.pep').pep({
@@ -77,17 +70,28 @@ $(document).ready(function(){
 			if (obj.activeDropRegions.length != 0) {
 				blurMap();
 				if(obj.activeDropRegions[0].context.className == "droppable endepunkt pep-dpa"){
+					obj.moveTo("45%","50%",false);
+					obj.resetVelocityQueue();
 					exit();
 				} else {
+					obj.moveTo("45%","50%",false);
+					obj.resetVelocityQueue();
 					openMilepal();
 				}
 			} else {
+				obj.moveTo("45%","50%",false);
+				obj.resetVelocityQueue();
 				showOptions(false);
 			}
 		},
-		initiate: function(){
+		initiate: function(ev, obj){
+			blurMap(2);
 			showOptions(true);
 		},
 		useCSSTranslation: false
 	});
 });
+
+function openCamera(){
+	alert("Denne funksjonen er ikke implementert");
+}
