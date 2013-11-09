@@ -97,6 +97,10 @@ html {
       -ms-text-size-adjust: 100%;
 }
 
+.clear {
+  clear: both;
+}
+
 /* Base styles
 -------------------------------------------------- */
 
@@ -107,8 +111,8 @@ body {
   bottom: 0;
   left: 0;
   font: 14px/1.25 "Helvetica Neue", sans-serif;
-  color: #222;
-  background-color: #fff;
+  color: white;
+  background-color: #ec545a;
 }
 
 /* Universal link styling */
@@ -126,7 +130,6 @@ a {
   bottom: 0;
   left: 0;
   overflow: auto;
-  background-color: #fff;
   -webkit-transition-property: top, bottom;
           transition-property: top, bottom;
   -webkit-transition-duration: .2s, .2s;
@@ -205,13 +208,8 @@ a {
   top: 0;
   display: -webkit-box;
   display: box;
-  background-color: #1eb0e9;
-  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #109adc 100%);
-  background-image: linear-gradient(to bottom, #1eb0e9 0, #109adc 100%);
-  border-bottom: 1px solid #0e5895;
-  box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, .8);
-  -webkit-box-orient: horizontal;
-          box-orient: horizontal;
+  background-color: #c9474d;
+  color: white;
 }
 
 /* Centered text in the .bar-title */
@@ -222,11 +220,11 @@ a {
   display: block;
   width: 100%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 44px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  text-shadow: 0 -1px rgba(0, 0, 0, .1);
   white-space: nowrap;
 }
 
@@ -285,8 +283,10 @@ a {
 /* Icon for tab  */
 .tab-icon {
   display: block;
-  height: 18px;
+  height: 50px;
   margin: 0 auto;
+  background-size: 50px;
+  margin-top: -8px;
 }
 
 /* Label for tab */
@@ -496,13 +496,12 @@ a {
 .list {
   margin-bottom: 10px;
   list-style: none;
-  background-color: #fff;
 }
 
 /* Pad each list item and add dividers */
 .list li {
   position: relative;
-  padding: 11px 60px 11px 10px; /* Given extra right padding to accomodate counts, chevrons or buttons */
+  padding: 11px 30px 11px 20px; /* Given extra right padding to accomodate counts, chevrons or buttons */
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -516,7 +515,7 @@ a {
   position: relative;
   display: block;
   padding: inherit;
-  margin: -11px -60px -11px -10px;
+ /* margin: -11px -60px -11px -10px;*/
   color: inherit;
 }
 
