@@ -52,16 +52,19 @@
 
 <div id="difficultyPreference">
   <div style="float: left"> Vanskelighet: </div>
-  <div id="sliderbarForDifficulty">
-    <input type="text" data-slider="true" data-slider-snap="true" data-slider-values="0,10,20,30" data-slider-highlight="false">
-  </div>
+  <div id="containerForDifficulty">
+    <div class="circle"></div>
+    <span class="x" onclick="moveCircleToX()">X</span>
+    <span class="one" onclick="moveCircleToOne()">|</span>
+    <span class="two" onclick="moveCircleToTwo()">||</span>
+    <span class="three" onclick="moveCircleToThree()">|||</span>
+  </div> 
 </div>
 
 <div id="timePreference">
   <div style="float: left"> Tid: </div>
   <div id="containerForTime">
-    <input id="sliderbarForTime" type="text" data-slider="true" data-slider-snap="false" data-slider-highlight="false">
-    <!-- <div class="mover"></div> -->
+    <input id="sliderbarForTime" type="text" data-slider-range="0,100" data-slider="true" data-slider-snap="false" data-slider-highlight="false">
   </div>
 </div>
 

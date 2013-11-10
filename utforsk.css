@@ -116,3 +116,46 @@ span.header.sok {
 	border-radius: 100px;
 
 }
+
+
+#containerForDifficulty
+{
+	height: 40px;
+	width: 125px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 30px;
+	float: right;
+	position: relative;
+}
+
+.circle
+{
+	height: 35px;
+	width: 25px;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 30px;
+	position: absolute;
+}
+
+.x
+{
+	float: left;
+	margin-left: 5px;
+}
+
+.one
+{
+	margin-left: 20%;
+}
+
+.two
+{
+	margin-left: 20%;
+}
+
+.three
+{
+	margin-left: 15%;
+}
