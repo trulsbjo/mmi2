@@ -126,46 +126,126 @@ span.header.sok {
 	border-radius: 100px;
 
 }
+#sliderbarForTime-slider {
+	position: relative;
+}
+
+#drag {
+	position: absolute;
+	right: 28px;
+	top: 2px;
+	color: #BD4349;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;	
+}
+
+#dragtime {
+	position: absolute;
+	right: 15px;
+	top: 2px;
+	color: white;
+}
+
+#dragzero {
+	position: absolute;
+	right: 163px;
+	top: 1px;
+	padding: 1px 0px 0px 2px!important;
+	width: 34px;
+	height: 38px;
+	text-align: center;
+	color: #BD4349;
+	font-size: 16px;
+	line-height: 2.5;
+	display: none;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#dragarrow {
+	position: absolute;
+	right: 163px;
+	top: 1px;
+	padding: 1px 0px 0px 2px!important;
+	width: 34px;
+	height: 38px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	line-height: 2.5;
+}
 
 
 #containerForDifficulty
 {
 	height: 40px;
-	width: 125px;
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 30px;
+	/*width: 125px;*/
+	background: none;
+	  -webkit-border-radius: 20px;
+	  -moz-border-radius: 20px;
+	  border-radius: 20px;
+	  border: 1px solid #c9474d;
+	  height: 40px;
+	  padding: 0px 0px;
 	float: right;
 	position: relative;
 }
 
-.circle
-{
-	height: 35px;
-	width: 25px;
-	border-style: solid;
-	border-width: medium;
-	border-radius: 30px;
-	position: absolute;
+#containerForDifficulty span {
+	padding: 10px 15px;
+	margin-left: 5px;
+	cursor: pointer;
+	color: #BD4349;
+	-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;	
 }
 
-.x
+
+.circle
 {
+	margin-top: -1px;
+	background: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid #c9474d;
+  width: 40px;
+  height: 40px;
+	position: absolute;
+	-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+left: -1px;
+}
+
+span.x
+{	
+	padding: 1px 0px 0px 2px!important;
+	width: 34px;
+	height: 38px;
 	float: left;
-	margin-left: 5px;
+	text-align: center;
+	margin-left: 0px!important;
+	color: #BD4349;
+	
 }
 
 .one
 {
-	margin-left: 20%;
+	
 }
 
 .two
 {
-	margin-left: 20%;
+	
 }
 
 .three
 {
-	margin-left: 15%;
+	
 }

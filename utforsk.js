@@ -27,40 +27,90 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   var value = parseInt(data.value);
 
   if(value==0){
-  	$(".dragger").text("X");
+  	$(".dragger").text("").css({"color":"#BD4349"});
+  	$("#dragtime").text("");
+  	$("#drag").show();
+  	$("#dragarrow").show();
+  	$("#dragzero").hide();
   }
+
+  else if(value>=1000){
+  	$("#dragtime").text((value/1000) + "d");
+  	$("#drag").hide();
+  	$("#dragarrow").hide();
+	$("#dragzero").show();
+	// $(".slider > .dragger").css({"margin-left":"-20px!important"});
+  }
+
+  else if(value>=100){
+  	$("#dragtime").text((value/100) + "t");
+  	$("#drag").hide();
+  	$("#dragarrow").hide();
+  	$("#dragzero").show();
+	  
+  }
+
+
+
+  // else if(value<=60){
+  // 	$("#dragtime").text((value) + "t");
+  // }
+
+  // else if(value>60){
+  // 	$("#dragtime").text((value/10) + "d");
+  // }
+
   else{
-	  $(".dragger").text(value);
+	  $("#dragtime").text(value + "m");
+	  $("#drag").hide();
+	  $("#dragarrow").hide();
+	  $("#dragzero").show();
   }
+
+  $("#dragzero").click(function() {
+  $("#sliderbarForTime").simpleSlider("setValue", 0);
+});
 
   console.log(value);
 });
 
 $("#sliderbarForTime").bind("slider:ready", function (event, data) {
-	$(".dragger").text("X");
+	$(".dragger").text("");
 });
 
 
 function moveCircleToX(){
 	$(".circle").css({
-		"margin-left":"0px"
+		"left":"-1px"
 	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#BD4349"});
 }
 
 function moveCircleToOne(){
 	$(".circle").css({
-		"margin-left":"28px"
+		"left":"37px"
 	});
+	$(".one").css({"color":"white"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#BD4349"});
 }
 
 function moveCircleToTwo(){
 	$(".circle").css({
-		"margin-left":"62px"
+		"left":"82px"
 	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"white"});
+	$(".three").css({"color":"#BD4349"});
 }
 
 function moveCircleToThree(){
 	$(".circle").css({
-		"margin-left":"95px"
+		"left":"132px"
 	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"white"});
 }

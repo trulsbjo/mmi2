@@ -17,6 +17,11 @@
   height: 40px;
   margin-top: -21px!important;
   margin-left: 0px!important;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s; 
 }
 
 
@@ -29,6 +34,7 @@
   border: 1px solid #c9474d;
   height: 40px;
   padding: 0px 10px;
+  z-index: 99;
 }
 
 .slider > .highlight-track {
