@@ -16,8 +16,8 @@
     <input class="backgrounddiv" type="image" src="img/track1.png" id="bilde1"/>
     <h1 id="add_landmark" style="display: none;">Legg til landemerke</h1>
     <div class="pep"></div>
-    <div class="droppable milepal" style="display:none;" id="milepal"><span>Milepæl</span></div>
-    <div class="droppable endepunkt" style="display:none;" id="endepunkt"><span>Endepunkt</span></div>
+    <div class="droppable milepal" style="display:none;" id="milepal"><span>Milepæl</span><img src="img/ikoner/marker_milepael.svg"></div>
+    <div class="droppable endepunkt" style="display:none;" id="endepunkt"><span>Endepunkt</span><img src="img/ikoner/marker_stop.svg"></div>
     <div class="datadisplay">
       <div>
         <p id="tid" class="datatext">tid: 5min</p>
@@ -33,7 +33,7 @@
 
   <!-- MILEPÆL FORM -->
   <div class="turform milepalform" id="milepalform">
-    <div>
+    <div class="header">
       <img src="img/ikoner/marker_milepael.svg">
       <p>ny milep&#230l</p>
     </div>
@@ -41,20 +41,24 @@
      <input type="text" placeholder="Tittel..."><br>
      <input type="text" placeholder="Kommentar...">
    </form>
-   <div>
+   <div id="tabilde">
     <p>Ta bilde: </p>
-    <button id="bildeknapp" onClick="openCamera()">BILDE</button>
+    <button id="bildeknapp" onClick="openCamera()"></button>
   </div>
   <div>
     <button id="kryssknapp" onClick="closeMilepal()">AVBRYT</button>
-    <button id="okknapp" onClick="setMilepal()">LEGG TIL</button>
+    <button id="okknapp" onClick="setMilepal()">PLASSER PUNKT</button>
   </div>
 </div>
 
 <!-- AVSLUTT FORM FORM -->
-<div class="turform" id="avsluttform"> 
+<div class="turform" id="avsluttform">
+<div class="header">
+      <img src="img/ikoner/marker_stop.svg">
+      <p>avslutt tur</p>
+    </div> 
   <form >
-   <input type="text" placeholder="Tittel på tur..."><br>
+   <input type="text" placeholder="Tittel p&#229; tur..."><br>
    <div id="datatur">
     <p id="avsluttlengde">16km</p>
     <p id="avslutttid">93min</p>
@@ -62,7 +66,7 @@
   <input type="text" placeholder="Beskrivelse...">
 </form>
 <div id="milepalknapper">
-  <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
+  <button id="kryssknapp" onClick="closeForm()">FORKAST</button>
   <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
 </div>
 </div>

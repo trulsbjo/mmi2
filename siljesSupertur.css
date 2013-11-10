@@ -1,15 +1,53 @@
+body {
+	/*background: url(img/bg.png) 0px 0px no-repeat!important;*/
+}
+
+img#bg {
+	width: 100%;
+}
+
 .smallerFrame
 {
 	border-style: outset;
-	border-width: 5px;
-	border-color: red;
 	height: 100%;
+	margin: 40px;
+background: white;
+color: #444;
 
 }
+.turinfo_wrap {
+	padding: 20px;
+	position: relative;
+}
+
+.addToFavorite {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
 
 .infoOmTur
 {
 	text-align: center;
+}
+
+a.button_gaatur {
+	padding: 11px 0 13px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	background: #39C099;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	border: none;
+	border-radius: 0px;
+	text-shadow: none;
+}
+
+.map {
+	width: 100%;
+/*margin-left: -5%;*/
 }
 
 .map img
