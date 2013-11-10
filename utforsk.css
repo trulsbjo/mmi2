@@ -175,6 +175,8 @@ span.header.sok {
 	color: white;
 	font-size: 16px;
 	line-height: 2.5;
+	background: url(img/ikoner/pil.svg) -6px -4px no-repeat;
+background-size: 50px;
 }
 
 

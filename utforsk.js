@@ -35,7 +35,7 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   }
 
   else if(value>=1000){
-  	$("#dragtime").text((value/1000) + "d");
+  	$(".dragger").text((value/1000) + "d").css({"color":"white"});
   	$("#drag").hide();
   	$("#dragarrow").hide();
 	$("#dragzero").show();
@@ -43,7 +43,7 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   }
 
   else if(value>=100){
-  	$("#dragtime").text((value/100) + "t");
+  	$(".dragger").text((value/100) + "t").css({"color":"white"});
   	$("#drag").hide();
   	$("#dragarrow").hide();
   	$("#dragzero").show();
@@ -60,11 +60,20 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   // 	$("#dragtime").text((value/10) + "d");
   // }
 
+  else if(value>=5){
+  	$(".dragger").text((value) + "m").css({"color":"white"});
+  	$("#drag").hide();
+  	$("#dragarrow").hide();
+  	$("#dragzero").show();
+	  
+  }
+
   else{
-	  $("#dragtime").text(value + "m");
-	  $("#drag").hide();
-	  $("#dragarrow").hide();
-	  $("#dragzero").show();
+	  $(".dragger").text("").css({"color":"#BD4349"});
+  	$("#dragtime").text("");
+  	$("#drag").show();
+  	$("#dragarrow").show();
+  	$("#dragzero").hide();
   }
 
   $("#dragzero").click(function() {
