@@ -1,5 +1,31 @@
+/**
+Logikk for next:
+Trykk på kartet for å gå et sted videre
+Tilstander til teller:
+1: Startfase, bruke kan gjøre seg kjent med UI
+2: Har fått et stykke, får beskjed om å legge til milepæl
+3: Bruker har akkurat lagt til milepæl, kartet viser at milepæl symbol
+*/
+
 var teller = 1;
 var filterValMap = 'blur(0px)';
+
+function next(){
+	teller++;
+	if (teller == 2) {
+		alert("Du har nå gått et lite stykke. Rett foran deg ser du det største treet du har sett i hele ditt liv. Du ønsker å gjøre andre oppmerksomme på dette store treet");
+		$("#tid").text("tid: 17min");
+		$("#strekning").text("strekning: 2km");
+		$("#moh").text("m.o.h: 142");
+	}
+	else if(teller == 3){
+		alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
+	}
+	else if(teller == 4){
+		alert("Du har kommet til veis ende, og ønsker å avslutte turen");
+	}
+	$("#bilde1").attr('src', 'img/track'+ teller +'.png');
+}
 
 function exit(){
 	var exitBoolean = confirm("Sikker på at du vil avslutte?");
@@ -26,7 +52,11 @@ function closeMilepal(){
 	$("#add_landmark").css({"display" : "none"});
 	$("#milepal").css({"display" : "none"});
 	$("#endepunkt").css({"display" : "none"});
+	$("#bilde"+teller).prop('disabled', false);
 	blurMap(0);
+	if (teller == 2) {
+		next();
+	};
 }
 
 function blurMap(number){

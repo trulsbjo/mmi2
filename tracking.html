@@ -13,18 +13,18 @@
 <body>
 
   <div>
-    <input class="backgrounddiv" type="image" src="img/track1.png" id="bilde1"/>
+    <input class="backgrounddiv" type="image" src="img/track1.png" id="bilde1" onclick="next()"/>
     <h1 id="add_landmark" style="display: none;">Legg til landemerke</h1>
     <div class="pep"></div>
     <div class="droppable milepal" style="display:none;" id="milepal"><span>Milepæl</span><img src="img/ikoner/marker_milepael.svg"></div>
     <div class="droppable endepunkt" style="display:none;" id="endepunkt"><span>Endepunkt</span><img src="img/ikoner/marker_stop.svg"></div>
     <div class="datadisplay">
       <div>
-        <p id="tid" class="datatext">tid: 5min</p>
+        <p id="tid" class="datatext">tid: 0min</p>
       </div>
       <div>
-        <p id"strekning" class="datatext">strekning: 1km</p>
-        <p id="moh" class="datatext">m.o.h: 50m</p>
+        <p id"strekning" class="datatext">strekning: 0km</p>
+        <p id="moh" class="datatext">m.o.h: 107</p>
       </div>
     </div>
   </div>
@@ -66,8 +66,8 @@
   <input type="text" placeholder="Beskrivelse...">
 </form>
 <div id="milepalknapper">
-  <button id="kryssknapp" onClick="closeForm()">FORKAST</button>
-  <button id="publiserknapp" onClick="okForm()">PUBLISER</button>
+  <button id="forkastknapp" onClick="closeForm()">FORKAST</button>
+  <button id="publiserknapp" onclick="location.href='index.html';">PUBLISER</button>
 </div>
 </div>
 
