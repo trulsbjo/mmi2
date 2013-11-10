@@ -501,10 +501,10 @@ a {
 /* Pad each list item and add dividers */
 .list li {
   position: relative;
-  padding: 20px 30px 20px 0px;
+  padding: 20px 10px 20px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
   height: 100px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 /* Give top border to first list items */
