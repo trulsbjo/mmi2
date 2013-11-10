@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
     <link rel="stylesheet" type="text/css" media="all" href="toggle-switch.css" />
     <link rel="stylesheet" type="text/css" media="all" href="utforsk.css" />
+    <link href="simple-slider.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="discover">
 <!-- Fixed bars -->
 <header class="bar-title">
     <h1 class="title">UTFORSK</h1>
@@ -18,33 +19,26 @@
   <ul class="tab-inner">
     <li class="tab-item">
       <a href="index.html">
-        <img class="tab-icon" src="img/icon-home.png">
-        <div class="tab-label">Feed</div>
+        <img class="tab-icon" src="img/ikoner/nav_feed.svg">
       </a>
     </li>
     <li class="tab-item active">
       <a href="utforsk.html">
-        <img class="tab-icon" src="img/icon-profile.png">
-        <div class="tab-label">Utforsk</div>
+        <img class="tab-icon" src="img/ikoner/nav_utforsk_aktiv.svg">
       </a>
     </li>
     <li class="tab-item">
       <a href="opprett.html">
-        <img class="tab-icon" src="img/icon-messages.png">
-        <div class="tab-label">Opprett</div>
+        <img class="tab-icon" src="img/ikoner/nav_opprett.svg">
       </a>
     </li>
     <li class="tab-item">
       <a href="profile.html">
-        <img class="tab-icon" src="img/icon-hamburger.png">
-        <div class="tab-label">Profil</div>
+        <img class="tab-icon" src="img/ikoner/nav_profil.svg">
       </a>
     </li>
   </ul>
 </nav>
-
-<!-- Anything else - this is what scrolls -->
-<div class="content">
 
 <div class="togglebarDiv">
   <div class="activeToggle switch-toggle switch-ios large-4">
@@ -54,44 +48,128 @@
     <label for="month92" onclick="goToUsers();">Brukere</label>
     <a></a>
   </div>
-  
-  <div class="difficultyPreference">
-    Vanskelighet:
-    <div class="togglebarForDifficulty" >
-      
-    </div>
-  </div>
-
-  <div class="timePreference">
-    Tid:
-    <div id="sliderbarForTime" >
-      <div id="time"></div>
-    </div>
-  </div>
-
-  <ul class="tabsInMiddle segmented-controller">
-    <li class="active">
-      <a href="#item1">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
-      </a>
-    </li>
-    <li>
-      <a href="#item2">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
-      </a>
-    </li>
-    <li>
-      <a href="#item3">
-      <img src="img/larsmonsen.jpg" style="width: 50px; height: 50px">
-      </a>
-    </li>
-  </ul>
 </div>
+
+<div id="difficultyPreference">
+  <div style="float: left"> Vanskelighet: </div>
+  <div id="sliderbarForDifficulty">
+    <input type="text" data-slider="true" data-slider-snap="true" data-slider-values="0,10,20,30" data-slider-highlight="false">
+  </div>
+</div>
+
+<div id="timePreference">
+  <div style="float: left"> Tid: </div>
+  <div id="containerForTime">
+    <input id="sliderbarForTime" type="text" data-slider="true" data-slider-snap="false" data-slider-highlight="false">
+    <!-- <div class="mover"></div> -->
+  </div>
+</div>
+
+<ul class="tabsInMiddle segmented-controller" >
+  <div class="list_header_wrap"></div>
+  <li class="active">
+    <a href="#item1">
+    <img src="img/ikoner/utforsk_naerheten.svg">
+    </a>
+    <span class="header i_naerheten">i nærheten</span>
+  </li>
+  <li>
+    <a href="#item2">
+    <img src="img/ikoner/bruker_favoritt.svg">
+    </a>
+    <span class="header favoritter">favoritter</span>
+  </li>
+  <li>
+    <a href="#item3">
+    <img src="img/ikoner/utforsk_sok.svg">
+    </a>
+    <span class="header sok">søk</span>
+  </li>
+</ul>
+
+
+<div class="usersTab" style="display: none">
+  <form>
+    <input class="searchTextfield" type="text" placeholder="søk etter brukere">
+    <input class="searchButton button-negative" type="button" value="søk" onclick="showUsers()" >
+  </form>
+</div>
+
+<!-- Anything else - this is what scrolls -->
+<div class="content">
+
+
 
 
 <ul class="listInTab">
   <li id="item1" class="list segmented-controller-item active">
     <ul>
+      <li>
+        <a href="siljesSupertur.html">
+          Siljes supertur
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          10t
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Blaatoppen t/r
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          50m
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Trondermarsjen
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          9t
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="siljesSupertur.html">
+          Siljes supertur
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          10t
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Blaatoppen t/r
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          50m
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Trondermarsjen
+        <div style="float: right;">
+          |
+        </div>
+        <div style="float: right; margin-right: 25%">
+          9t
+        </div>
+        </a>
+      </li>
       <li>
         <a href="siljesSupertur.html">
           Siljes supertur
@@ -195,33 +273,62 @@
 </ul>
 
 
-<div class="usersTab" style="display: none">
-  <form>
-    <input class="searchTextfield" type="text" placeholder="søk etter brukere">
-    <input class="searchButton button-positive" type="button" value="søk" onclick="showUsers()" >
-  </form>
-  <div class="usersFromSearch list" style="display: none">
+
+  <div class="usersFromSearch segmented-controller-item list" style="display: none">
     
     <ul>
       <li>
         <a href="profile.html">
+          <div class="profilepicture">
+            <img src="touch-icons\geirove.png">
+          </div>
           Geir Ove
         </a>
       </li>
       <li>
         <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\larsmonsen.png">
+          </div>
           Geir Overbar
         </a>
       </li>
       <li>
         <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\maria.png">
+          </div>
+          Geir Ovelaff
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <div class="profilepicture">
+            <img src="touch-icons\trine.png">
+          </div>
+          Geir Ove
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\august.png">
+          </div>
+          Geir Overbar
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="profilepicture">
+            <img src="touch-icons\trine.png">
+          </div>
           Geir Ovelaff
         </a>
       </li>
     </ul>
 
   </div>
-</div>
+
 
 
 </div>
@@ -231,5 +338,6 @@
 <script src="jquery-migrate-1.2.1.js"></script>
 <script src="utforsk.js"></script>
 <script src="ratchet.js"></script>
+<script src="simple-slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+.slider {
+  width: 100px;
+  float: right;
+}
+
+#sliderbarForTime-slider {
+  width: 180px;
+}
+
+.slider > .dragger {
+  background: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid #c9474d;
+  width: 40px;
+  height: 40px;
+  margin-top: -21px!important;
+  margin-left: -20px!important;
+}
+
+
+
+.slider > .track, .slider > .highlight-track {
+  background: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #c9474d;
+  height: 40px;
+  padding: 0px 10px;
+}
+
+.slider > .highlight-track {
+	background-color: #8DCA09;
+	background: -webkit-linear-gradient(top, #8DCA09, #72A307);
+	background: -moz-linear-gradient(top, #8DCA09, #72A307);
+	background: linear-gradient(top, #8DCA09, #72A307);
+	
+	border-color: #496805;
+  display: none;
+}
+

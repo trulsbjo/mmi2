@@ -14,12 +14,16 @@ function exit(){
 
 function openMilepal(){
 	$("#milepalform").css('z-index', 10);
-	$("#milepalform").css({"display" : "inline"});
+	// $("#milepalform").css({"display" : "inline"});
+	$("#milepalform").slideDown("fast");
 	$("#bilde"+teller).prop('disabled', true);
 }
 
 function closeMilepal(){
-	$("#milepalform").css({"display" : "none"});
+	$("#milepalform").slideUp("fast");
+	$("#add_landmark").css({"display" : "none"});
+	$("#milepal").css({"display" : "none"});
+	$("#endepunkt").css({"display" : "none"});
 	blurMap(0);
 }
 
@@ -44,9 +48,11 @@ function blurMap(number){
 
 function showOptions(showBoolean){
 	if(showBoolean){
+		$("#add_landmark").css({"display" : "block"});
 		$("#milepal").css({"display" : "inline"});
 		$("#endepunkt").css({"display" : "inline"});
 	} else {
+		$("#add_landmark").css({"display" : "none"});
 		$("#milepal").css({"display" : "none"});
 		$("#endepunkt").css({"display" : "none"});
 		blurMap(0);
