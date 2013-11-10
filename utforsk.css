@@ -82,13 +82,23 @@ line-height: 2.5;
 	bottom: -27px;
 }
 
-.segmented-controller li.active span.header {
+.segmented-controller li img.arrow {
+	display: none;
+	height: 16px;
+	width: 32px;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.segmented-controller li.active span.header, .segmented-controller li.active img.arrow {
 	display: block;
 }
 
 span.header.i_naerheten {
-width: 122px;
-margin-left: -61px;
+	width: 122px;
+	margin-left: -61px;
 }
 
 span.header.favoritter {

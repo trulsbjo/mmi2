@@ -22,15 +22,56 @@ color: #444;
 
 .addToFavorite {
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 14px;
+	top: 12px;
 }
 
 
 .infoOmTur
 {
 	text-align: center;
+	height: 80px;
+	font-size: 16px;
 }
+
+p.attributes {
+	float: left;
+	width: 100%;
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 15px;
+}
+
+span.lengde {
+	padding: 0px 0px 0px 20px;
+	margin-left: 20px;
+	background: url(img/ikoner/lengde.svg) -3px -3px no-repeat;
+	background-size: 24px;
+}
+
+span.tid {
+	padding: 0px 0px 0px 22px;
+	background: url(img/ikoner/tid.svg) -3px -4px no-repeat;
+	background-size: 25px;
+}
+
+span.nivaa {
+	padding: 0px 0px 0px 20px;
+	margin-left: 20px;
+}
+
+p.story {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.infoOmTur a {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
 
 a.button_gaatur {
 	padding: 11px 0 13px;
@@ -43,6 +84,20 @@ a.button_gaatur {
 	border: none;
 	border-radius: 0px;
 	text-shadow: none;
+}
+
+a.button_gaatur:active {
+	padding: 11px 0 13px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	background: #39C099;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	border: none;
+	border-radius: 0px;
+	text-shadow: none;
+	box-shadow: none;
 }
 
 .map {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="1136px" viewBox="0 0 640 1136" enable-background="new 0 0 640 1136" xml:space="preserve">
+<rect fill="#ED555A" width="640" height="1136"/>
+<rect y="374" opacity="0.15" width="640" height="8"/>
+<rect y="1054" opacity="0.15" width="640" height="82"/>
+<rect opacity="0.15" width="640" height="82"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="29" y1="568" x2="610" y2="568"/>
+<rect y="23.347" fill="none" width="640" height="90.845"/>
+<text transform="matrix(1 0 0 1 212.8652 57.6182)" fill="#FFFFFF" font-family="'HelveticaNeue-Light'" font-size="48">UTFORSK</text>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M587.965,203.012
+	c0-22.603-17.859-41.025-40.235-41.946v-0.046H380.527v0.049c-0.542-0.027-1.084-0.049-1.634-0.049
+	c-20.2,0-36.579,18.803-36.579,41.992c0,23.19,16.379,41.99,36.579,41.99c0.55,0,1.092-0.019,1.634-0.047v0.047h167.202v-0.043
+	C570.105,244.037,587.965,225.613,587.965,203.012z"/>
+<circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="384.849" cy="203.012" r="42.534"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M587.965,310.325
+	c0-22.603-17.859-41.024-40.235-41.946v-0.045H264.373v0.049c-0.542-0.028-1.084-0.049-1.634-0.049
+	c-20.2,0-36.579,18.802-36.579,41.991c0,23.19,16.379,41.991,36.579,41.991c0.55,0,1.092-0.02,1.634-0.047v0.047h283.356v-0.043
+	C570.105,351.352,587.965,332.928,587.965,310.325z"/>
+<circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="268.694" cy="310.325" r="42.534"/>
+<rect x="33.101" y="183.135" fill="none" width="286.899" height="159.312"/>
+<text transform="matrix(1 0 0 1 33.1006 217.4062)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'HelveticaNeue-Light'" font-size="48">Vanskelighet:</tspan><tspan x="0" y="110" fill="#FFFFFF" font-family="'HelveticaNeue-Light'" font-size="48">Tid:</tspan></text>
+</svg>

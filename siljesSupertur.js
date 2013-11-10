@@ -1,9 +1,9 @@
 function addToFavorite(){
-	if($(".addToFavorite").attr("src")=="img/star_empty.png"){
-		$(".addToFavorite").attr("src", "img/star_filled.png");
+	if($(".addToFavorite").attr("src")=="img/ikoner/favoritt_inaktiv.svg"){
+		$(".addToFavorite").attr("src", "img/ikoner/favoritt_aktiv.svg");
 	}
 	else{
-		$(".addToFavorite").attr("src", "img/star_empty.png");
+		$(".addToFavorite").attr("src", "img/ikoner/favoritt_inaktiv.svg");
 	}
 }
 
