@@ -23,7 +23,44 @@ function showUsers(){
 }
 
 
-$("#sliderbarForDifficulty").bind("slider:changed", function (event, data) {
-	console.log(data.value);
+$("#sliderbarForTime").bind("slider:changed", function (event, data) {
+  var value = parseInt(data.value);
+
+  if(value==0){
+  	$(".dragger").text("X");
+  }
+  else{
+	  $(".dragger").text(value);
+  }
+
+  console.log(value);
 });
 
+$("#sliderbarForTime").bind("slider:ready", function (event, data) {
+	$(".dragger").text("X");
+});
+
+
+function moveCircleToX(){
+	$(".circle").css({
+		"margin-left":"0px"
+	});
+}
+
+function moveCircleToOne(){
+	$(".circle").css({
+		"margin-left":"28px"
+	});
+}
+
+function moveCircleToTwo(){
+	$(".circle").css({
+		"margin-left":"62px"
+	});
+}
+
+function moveCircleToThree(){
+	$(".circle").css({
+		"margin-left":"95px"
+	});
+}
