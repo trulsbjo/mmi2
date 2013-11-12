@@ -19,7 +19,7 @@ h1#add_landmark {
 	border-radius: 50%;
 	width: 40px; 
 	height: 40px; 
-	opacity: 0.9;
+	opacity: 0.5;
 	background: #39C099; 
 	z-index: 5; 
 	top: 50%;

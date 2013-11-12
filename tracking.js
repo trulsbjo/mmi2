@@ -4,7 +4,7 @@ Trykk på kartet for å gå et sted videre
 Tilstander til teller:
 1: Startfase, bruke kan gjøre seg kjent med UI
 2: Har fått et stykke, får beskjed om å legge til milepæl
-3: Bruker har akkurat lagt til milepæl, kartet viser at milepæl symbol
+3: Bruker har akkurat lagt til milepæl, kartet viser et milepæl symbol
 */
 
 var teller = 1;
@@ -23,6 +23,9 @@ function next(){
 	}
 	else if(teller == 4){
 		alert("Du har kommet til veis ende, og ønsker å avslutte turen");
+		$("#tid").text("tid: 57min");
+		$("#strekning").text("strekning: 7km");
+		$("#moh").text("m.o.h: 123");
 	}
 	$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 }
@@ -89,7 +92,6 @@ function showOptions(showBoolean){
 		$("#endepunkt").css({"display" : "none"});
 		blurMap(0);
 	}
-
 }
 
 
@@ -128,6 +130,7 @@ $(document).ready(function(){
 		},
 		useCSSTranslation: false
 	});
+
 });
 
 function openCamera(){
