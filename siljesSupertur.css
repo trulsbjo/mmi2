@@ -147,17 +147,16 @@ a.button_gaatur:active {
 	position: fixed;
 	margin-top: 70px;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -140px;
 	background: white;
-	width: 300px;
-	padding: 10px 0px 0px 0px;
+	width: 280px;
+	padding: 0px 0px 0px 0px;
 	top: 0px;
 }
 
 .turform .header {
 	height: 80px;
 	width: 100%;
-	margin-bottom: 10px;
 }
 
 .header p {
@@ -262,6 +261,7 @@ font-size: 16px;
 	position: relative;
 	padding-left: 50px;
 	border: 0px;
+	padding-right: 22px;
 }
 
 .list li span.username {
@@ -286,7 +286,7 @@ font-size: 16px;
 	background: url(img/ikoner/kommentar.svg) -1px -3px no-repeat, #39C099;
 	background-size: 50px;
 	height: 45px;
-	width: 258px;
+	width: 238px;
 	padding-left: 100px;
 	text-align: left;
 	padding: 0px;
@@ -309,7 +309,7 @@ font-size: 16px;
 	white-space: nowrap;
 	-webkit-transition: all 0 linear;
 	transition: all 0 linear;
-	margin-left: -34px;
+	margin-left: -20px;
 }
 
 #photos > ul > li {
@@ -325,13 +325,15 @@ border: 0px;
 .turform .tinyFrame img {
 	margin-right: 7px;
 	margin-left: auto;
+	width: 70px;
+	height: 70px;
 }
 
 #takephoto {
 	background: url(img/ikoner/kamera_inv.svg) 0px 0px no-repeat, #39C099;
-	background-size: 80px;
-	width: 80px;
-	height: 80px;
+	background-size: 70px;
+	width: 70px;
+	height: 70px;
 }
 
 .list.inset li:last-child {
