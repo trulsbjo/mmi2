@@ -195,6 +195,9 @@ a.button_gaatur:active {
 	box-shadow: none;
 	background: #eee;
 	margin-top: -9px;
+	width: 150px;
+	max-width: 150px;
+	border-radius: 0px;
 }
 
 .turform input {
@@ -340,7 +343,15 @@ border: 0px;
 	padding-bottom: 0px;
 }
 
-
+#submit_comment {
+	float: right;
+margin-top: -50px;
+width: 38px;
+height: 36px;
+font-size: 16px;
+color: white;
+background: #39C099;
+}
 
 
 

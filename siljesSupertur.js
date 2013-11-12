@@ -44,11 +44,18 @@ function startTracking(){
 
 $("#commentbutton").click(function() {
 	  $("#commentform").show();
+	  $("#submit_comment").show();
 	  $("#testuser").show();
 	  $(this).hide();
 	  $( "#commentform textarea" ).focus();
+});
 
-	});
+$("#submit_comment").click(function() {
+	  $("#commentform textarea").hide();
+	  $("#usercomment").show();
+	  $(this).hide();
+});
+
 
 
 function goToUtforsk(){
