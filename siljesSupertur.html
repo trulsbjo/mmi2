@@ -146,8 +146,8 @@
         <img id="backgroundMap5min" src="img/5min.png" style="display: none" onclick="showMilestone()">
         <img id="kultTreImage" src="img/kultTre.png" style="display: none" onclick="backTo5minImage()">
         <img id="backgroundMap5min2" src="img/5min.png" style="display: none" onclick="milestonePopup()">
-        <!-- <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="showMilestoneForm()"> -->
-        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="goToUtforsk()">
+        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="showMilestoneForm()">
+       <!--  <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="goToUtforsk()"> -->
       </div>
     </div>
 
@@ -197,21 +197,24 @@
     <!-- AVSLUTT FORM -->
     <div class="turform" id="avsluttTurForm" style="display: none">
       <div class="header">
-      <img src="img/ikoner/marker_milepael.svg">
-      <p>Avslutt tur</p>
+      <img src="img/ikoner/marker_stop.svg">
+      <p>Fullført</p>
       </div>
-      <p id="title">Du har fullført <br>
-        "Siljes supertur" <br>
-        Hva synes du?</p><br>
-      <div class="rating">
-        <label style="float: left">Rating:</label>
-        <img src="img/sad_smiley.png" name="sadSmiley" width="25px" height="25px"style="float: left">
-        <div class="ratingSlider" style="float: left">
-          <input type="range" min="1" max="5">
-        </div>
-        <img src="img/happy_smiley.png" name="happySmiley" width="30px" height="25px" style="float: left">
+      <p id="title">Du har gått <br>
+        Siljes supertur <br>
+        </p><br>
+
+      <div id="difficultyPreference">
+        <div style="float: left">Fornøyd:</div>
+        <div id="containerForDifficulty">
+          <div class="circle"></div>
+          <span class="x" onclick="moveCircleToX()">|</span>
+          <span class="two" onclick="moveCircleToTwo()">||</span>
+          <span class="three" onclick="moveCircleToThree()">|||</span>
+        </div> 
       </div>
-      <textarea rows="5" placeholder="Kommentar..."></textarea>
+
+      <textarea id="complete_text" rows="2" placeholder="Kommentar..."></textarea>
       <button id="completeForm" onclick="avsluttTur()">FULLFØR</button>
     </div>
 

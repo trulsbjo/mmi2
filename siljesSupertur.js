@@ -56,6 +56,50 @@ $("#submit_comment").click(function() {
 	  $(this).hide();
 });
 
+function moveCircleToX(){
+	$(".circle").css({
+		"left":"-1px",
+		"border-color":"#BD4349"
+	});
+	$(".x").css({"color":"#BD4349"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+
+}
+
+function moveCircleToOne(){
+	$(".circle").css({
+		"left":"37px",
+		"border-color":"#BD4349"
+	});
+	$(".x").css({"color":"#BD4349"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+}
+
+function moveCircleToTwo(){
+	$(".circle").css({
+		"left":"43px",
+		"border-color":"#BD4349"
+	});
+	$(".x").css({"color":"#DDD"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+}
+
+function moveCircleToThree(){
+	$(".circle").css({
+		"left":"89px",
+		"border-color":"#BD4349"
+	});
+	$(".x").css({"color":"#DDD"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#BD4349"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+}
 
 
 function goToUtforsk(){
