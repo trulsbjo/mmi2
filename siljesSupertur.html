@@ -146,7 +146,8 @@
         <img id="backgroundMap5min" src="img/5min.png" style="display: none" onclick="showMilestone()">
         <img id="kultTreImage" src="img/kultTre.png" style="display: none" onclick="backTo5minImage()">
         <img id="backgroundMap5min2" src="img/5min.png" style="display: none" onclick="milestonePopup()">
-        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="showMilestoneForm()">
+        <!-- <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="showMilestoneForm()"> -->
+        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="goToUtforsk()">
       </div>
     </div>
 
@@ -155,7 +156,7 @@
       <div class="header">
       <img src="img/ikoner/marker_milepael.svg">
       <p>Milep&#230l</p>
-    </div>
+      </div>
      
       <p id="title">Kul stein!</p><br>
 
@@ -194,12 +195,14 @@
 
 
     <!-- AVSLUTT FORM -->
-    <div id="avsluttTurForm" style="display: none">
-      <div class="formText">
-        Du har fullført <br>
-        "Siljes supertur" <br>
-        Hva synes du?
+    <div class="turform" id="avsluttTurForm" style="display: none">
+      <div class="header">
+      <img src="img/ikoner/marker_milepael.svg">
+      <p>Avslutt tur</p>
       </div>
+      <p id="title">Du har fullført <br>
+        "Siljes supertur" <br>
+        Hva synes du?</p><br>
       <div class="rating">
         <label style="float: left">Rating:</label>
         <img src="img/sad_smiley.png" name="sadSmiley" width="25px" height="25px"style="float: left">

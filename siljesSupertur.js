@@ -63,7 +63,7 @@ function goToUtforsk(){
 		window.location.href = "utforsk.html"
 	} */
 
-	$("#avsluttTurForm").show();
+	$("#avsluttTurForm").slideDown("fast");
 }
 
 function showMilestone(){
