@@ -568,11 +568,10 @@ a {
 
 .list.inset {
   width: auto;
-  margin-right: 10px;
-  margin-left: 10px;
-  border: 1px solid rgba(0, 0, 0, .1);
+  padding-left: 0px;
   border-radius: 6px;
   box-sizing: border-box;
+  padding-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
 /* Remove border from first/last standard list items to avoid double border at top/bottom of lists */

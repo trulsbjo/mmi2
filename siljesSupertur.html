@@ -152,25 +152,36 @@
 
     <!-- MILEPÆL FORM -->
     <div class="turform milepalform" id="milepalform" style="display: none">
-      <div>
-        <!-- ICON -->
-        <p>MILEPÆL</p>
+      <div class="header">
+      <img src="img/ikoner/marker_milepael.svg">
+      <p>Milep&#230l</p>
+    </div>
+     
+      <p id="title">Kul stein!</p><br>
+
+      <div id="photos">
+        <ul>
+          <li><div class="tinyFrame"><img src="touch-icons/geirove.png"></div></li>
+          <li><div class="tinyFrame"><img src="touch-icons/geirove.png"></div></li>
+          <li><div class="tinyFrame"><img src="touch-icons/geirove.png"></div></li>
+          <li><div id="takephoto" class="tinyFrame" onClick="openCamera()"></div></li>
+        </ul>
       </div>
-      <form >
-       <input type="text" value="Kul Stein!"><br>
-       <ul class="list inset">
-        <li>Stine: "ligner på elvis!"</li>
+      <ul class="list inset">
+        <li><img class="profilepicture" src="touch-icons/geirove.png">
+          <span class="username">Stine:</span> "ligner på elvis!"</li>
+        <li><img class="profilepicture" src="touch-icons/geirove.png"><span class="username">Jørn:</span> "Kjempefin!"</li>
+        <li><img class="profilepicture" src="touch-icons/geirove.png"><span class="username">Per:</span> "Den har jeg tatt på, sjekk bildet mitt!"</li>
+        <li><button id="commentbutton">kommenter</button><form id="commentform" style="display: none;"><img style="display: none;" class="profilepicture" id="testuser" src="touch-icons/geirove.png">
+       <textarea rows="1" placeholder="Kommentar..."></textarea>
+      </form></li>
       </ul>
        <!-- <input type="text" placeholder="Kommentar..."> -->
-       <textarea rows="5" placeholder="Kommentar..."></textarea>
-      </form>
       <div>
-      <p>Ta bilde: </p>
-      <button id="bildeknapp" onClick="openCamera()">BILDE</button>
+      
       </div>
       <div>
       <button id="kryssknapp" onClick="closeMilepal()">AVBRYT</button>
-      <button id="okknapp" onClick="setMilepal()">LEGG TIL</button>
       </div>
     </div>
 

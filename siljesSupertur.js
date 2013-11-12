@@ -24,6 +24,33 @@ function startTracking(){
 	$("#backgroundMap5min").show();
 }
 
+// function comment(){
+// 	// var inputComment = $("#commentform");
+// 	// 	commentButton = $("#commentbutton");
+// 	// commentButton.click() {
+// 	// 	inputComment.show();
+// 	// }
+
+// 	// $("#commentbutton").click(function(){
+// 	// 	console.log('Trykket');
+// 	// 	// $("#commentform").show();
+
+// 	// });
+// 	$("#commentbutton").click(function() {
+// 	  $(this).hide();
+// 	});
+		
+// };
+
+$("#commentbutton").click(function() {
+	  $("#commentform").show();
+	  $("#testuser").show();
+	  $(this).hide();
+	  $( "#commentform textarea" ).focus();
+
+	});
+
+
 function goToUtforsk(){
 /*	if(confirm("Er du sikker på at du vil avslutte turen?")){
 		window.location.href = "utforsk.html"
@@ -48,7 +75,7 @@ function milestonePopup(){
 }
 
 function showMilestoneForm(){
-	$("#milepalform").show();
+	$("#milepalform").slideDown("fast");
 }
 
 function avsluttTur(){

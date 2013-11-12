@@ -8,7 +8,7 @@ Tilstander til teller:
 */
 
 var teller = 1;
-var filterValMap = 'blur(0px)';
+// var filterValMap = 'blur(0px)';
 
 function next(){
 	teller++;

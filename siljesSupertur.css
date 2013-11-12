@@ -11,8 +11,8 @@ img#bg {
 	border-style: outset;
 	height: 100%;
 	margin: 40px;
-background: white;
-color: #444;
+	background: white;
+	color: #444;
 
 }
 .turinfo_wrap {
@@ -75,7 +75,6 @@ p.story {
 
 a.button_gaatur {
 	padding: 11px 0 13px;
-	margin-bottom: 10px;
 	font-size: 16px;
 	background: #39C099;
 	color: white;
@@ -140,3 +139,214 @@ a.button_gaatur:active {
 	height: 100%;
 	
 }
+
+
+.turform{
+	color: #444;
+	display: none;
+	position: fixed;
+	margin-top: 70px;
+	left: 50%;
+	margin-left: -150px;
+	background: white;
+	width: 300px;
+	padding: 10px 0px 0px 0px;
+	top: 0px;
+}
+
+.turform .header {
+	height: 80px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.header p {
+	float: left;
+	font-size: 18px;
+	line-height: 4.5;
+	text-transform: uppercase;
+	margin-left: -12px;
+}
+
+#title {
+	background: #EEEEEE;
+	padding: 5px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.turform  div img {
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-left: 56px;
+}
+
+.turform form {
+	padding: 0px 0px;
+	border: 0px;
+	box-shadow: none;
+}
+
+.turform textarea {
+	height: auto;
+	border: 0px;
+	box-shadow: none;
+	background: #eee;
+	margin-top: -9px;
+}
+
+.turform input {
+	box-shadow: none!important;
+	border: none!important;
+	background: #EEE!important;
+}
+
+#tabilde {
+	height: 50px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 0px 20px;
+}
+
+#tabilde p {
+	float: left;
+	line-height: 3.5;
+	padding: 0px 20px 0px 10px;
+
+}
+
+.turform button#bildeknapp {
+	width: 50px;
+	height: 50px;
+	background: url(img/ikoner/kamera.svg) 0px 0px no-repeat;
+	background-size: 50px;
+	border: none;
+	float: left;
+}
+
+.turform button {
+	border: none;
+}
+
+#kryssknapp, #forkastknapp {
+	background: none;
+	color: #ddd;
+	float: right;
+	margin-right: 20px;
+}
+
+#okknapp, #publiserknapp {
+	width: 100%;
+text-align: center;
+background: #39C099;
+color: white;
+margin: 0px;
+padding: 15px 0px;
+font-size: 16px;
+
+}
+
+#datatur p {
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+.list li {
+	height: auto;
+	min-height: 17px;
+	position: relative;
+	padding-left: 50px;
+	border: 0px;
+}
+
+.list li span.username {
+	font-weight: bold;
+}
+
+.list li .profilepicture {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 0px;
+	border-radius: 20px;
+	top: 8px;
+
+}
+
+.avsluttTurButton {
+	position: absolute;
+}
+
+#commentbutton {
+	background: url(img/ikoner/kommentar.svg) -1px -3px no-repeat, #39C099;
+	background-size: 50px;
+	height: 45px;
+	width: 258px;
+	padding-left: 100px;
+	text-align: left;
+	padding: 0px;
+	color: white;
+	padding: 10px 10px 10px 90px;
+	text-transform: uppercase;
+	margin-left: -49px;
+	margin-top: -15px;
+}
+
+#photos {
+	margin-top: -17px;
+	padding: 0px 10px 10px 10px;
+	background: #eee;
+}
+
+#photos > ul {
+	position: relative;
+	font-size: 0;
+	white-space: nowrap;
+	-webkit-transition: all 0 linear;
+	transition: all 0 linear;
+	margin-left: -34px;
+}
+
+#photos > ul > li {
+	display: inline-block;
+vertical-align: top;
+border: 0px;
+}
+
+.tinyFrame {
+	border-style: outset;
+}
+
+.turform .tinyFrame img {
+	margin-right: 7px;
+	margin-left: auto;
+}
+
+#takephoto {
+	background: url(img/ikoner/kamera_inv.svg) 0px 0px no-repeat, #39C099;
+	background-size: 80px;
+	width: 80px;
+	height: 80px;
+}
+
+.list.inset li:last-child {
+	padding-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

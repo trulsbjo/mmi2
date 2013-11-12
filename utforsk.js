@@ -87,6 +87,11 @@ $("#sliderbarForTime").bind("slider:ready", function (event, data) {
 	$(".dragger").text("");
 });
 
+var liDefault = $(".default");
+	liEasy = $(".easy");
+	liMedium = $(".medium");
+	liHard = $(".hard");
+
 
 function moveCircleToX(){
 	$(".circle").css({
@@ -95,6 +100,10 @@ function moveCircleToX(){
 	$(".one").css({"color":"#BD4349"});
 	$(".two").css({"color":"#BD4349"});
 	$(".three").css({"color":"#BD4349"});
+	liDefault.show();
+	liEasy.hide();
+	liMedium.hide();
+	liHard.hide();
 }
 
 function moveCircleToOne(){
@@ -104,6 +113,10 @@ function moveCircleToOne(){
 	$(".one").css({"color":"white"});
 	$(".two").css({"color":"#BD4349"});
 	$(".three").css({"color":"#BD4349"});
+	liDefault.hide();
+	liEasy.show();
+	liMedium.hide();
+	liHard.hide();
 }
 
 function moveCircleToTwo(){
@@ -113,6 +126,10 @@ function moveCircleToTwo(){
 	$(".one").css({"color":"#BD4349"});
 	$(".two").css({"color":"white"});
 	$(".three").css({"color":"#BD4349"});
+	liDefault.hide();
+	liEasy.hide();
+	liMedium.show();
+	liHard.hide();
 }
 
 function moveCircleToThree(){
@@ -122,4 +139,8 @@ function moveCircleToThree(){
 	$(".one").css({"color":"#BD4349"});
 	$(".two").css({"color":"#BD4349"});
 	$(".three").css({"color":"white"});
+	liDefault.hide();
+	liEasy.hide();
+	liMedium.hide();
+	liHard.show();
 }
