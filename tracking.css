@@ -144,6 +144,15 @@ transform: scale(1.5);
 	background: #EEE!important;
 }
 
+li span.time {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	font-size: 12px;
+	background: url(img/ikoner/tid.svg) -3px -4px no-repeat;
+	background-size: 25px;
+}
+
 #tabilde {
 	height: 50px;
 	width: 100%;
