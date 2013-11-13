@@ -8,7 +8,7 @@ Tilstander til teller:
 */
 
 var teller = 1;
-// var filterValMap = 'blur(0px)';
+var finishedTaskOne = false;
 
 function next(){
 	teller++;
@@ -17,17 +17,22 @@ function next(){
 		$("#tid").text("tid: 17min");
 		$("#strekning").text("strekning: 2km");
 		$("#moh").text("m.o.h: 142");
+		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 	}
-	else if(teller == 3){
+	else if(teller == 3 && finishedTaskOne){
 		alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
+		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
+	} else if(teller == 3){
+		teller--;
+		alert("Du må gjøre folk oppmerksomme på det store treet");
 	}
 	else if(teller == 4){
 		alert("Du har kommet til veis ende, og ønsker å avslutte turen");
 		$("#tid").text("tid: 57min");
 		$("#strekning").text("strekning: 7km");
 		$("#moh").text("m.o.h: 123");
+		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 	}
-	$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 }
 
 function exit(){
@@ -45,7 +50,6 @@ function openMilepal(){
 	$("#milepal").css({"display" : "none"});
 	$("#endepunkt").css({"display" : "none"});
 	$("#milepalform").css('z-index', 10);
-	// $("#milepalform").css({"display" : "inline"});
 	$("#milepalform").slideDown("fast");
 	$("#bilde"+teller).prop('disabled', true);
 }
@@ -58,8 +62,15 @@ function closeMilepal(){
 	$("#bilde"+teller).prop('disabled', false);
 	blurMap(0);
 	if (teller == 2) {
+		finishedTaskOne = true;
 		next();
 	};
+}
+
+function closeEndepunkt(){
+	$("#avsluttform").slideUp("fast"); 
+	$("#bilde"+teller).prop('disabled', true);
+	blurMap(0);
 }
 
 function blurMap(number){
@@ -94,6 +105,9 @@ function showOptions(showBoolean){
 	}
 }
 
+function centerpep(){
+	$('.pep').css({"top":"50%", "left":"45%"});
+}
 
 $(document).ready(function(){
 	$('.pep').pep({
@@ -130,7 +144,7 @@ $(document).ready(function(){
 		},
 		useCSSTranslation: false
 	});
-
+	centerpep();
 });
 
 function openCamera(){
