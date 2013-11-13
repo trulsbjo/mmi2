@@ -17,15 +17,42 @@ h1#add_landmark {
 
 .pep{ 
 	border-radius: 50%;
-	width: 40px; 
-	height: 40px; 
-	opacity: 0.5;
-	background: #39C099; 
-	z-index: 5; 
-	top: 50%;
-	left: 45%;
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	background: url(img/ikoner/pluss.svg) 0px 1px no-repeat, #39C099;
+	z-index: 5;
+	top: 50%;/*
+	left: 50%!important;*/
 	position: absolute;
+	background-size: 40px;/*
+	margin-left: -20px!important;*/
 }
+
+.active_marker {
+	
+	width: 80px; 
+	height: 68px; 
+	position: absolute; 
+	left: 50%; 
+	margin-left: -39px; 
+	top: 50%; 
+	margin-top: -64px;
+	z-index: 6;
+}
+
+.active_marker.start {
+	background: url(img/ikoner/marker_start.svg) 0px 0px no-repeat;
+	background-size: 80px;
+}
+
+.active_marker.milepael {
+	background: url(img/ikoner/marker_milepael.svg) 0px 0px no-repeat;
+	background-size: 80px;
+}
+
+
+
 .droppable{   
 	border-radius: 50%;
 	height: 80px;
@@ -50,13 +77,15 @@ h1#add_landmark {
 }
 
 .droppable.milepal  { 
-	top: 45%; 
+	top: 50%;
+	margin-top: -55px; 
 	left:10%; 
 }
 
 .droppable.endepunkt  { 
-	top: 45%; 
-	right:10%; 
+	top: 50%;
+	margin-top: -55px; 
+	right :10%;  
 }
 
 .pep-dpa{ 
@@ -142,15 +171,6 @@ transform: scale(1.5);
 	box-shadow: none!important;
 	border: none!important;
 	background: #EEE!important;
-}
-
-li span.time {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-	font-size: 12px;
-	background: url(img/ikoner/tid.svg) -3px -4px no-repeat;
-	background-size: 25px;
 }
 
 #tabilde {

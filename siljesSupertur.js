@@ -21,7 +21,7 @@ function startTracking(){
 	}); */
 
 	$(".avsluttTurButton").show();
-	$("#backgroundMap5min").show();
+	$("#0min").show();
 }
 
 // function comment(){
@@ -110,25 +110,56 @@ function goToUtforsk(){
 	$("#avsluttTurForm").slideDown("fast");
 }
 
-function showMilestone(){
-	$("#backgroundMap5min").hide();
-	$("#kultTreImage").show();
+function walkFiveMin(){
+	$("#0min").hide();
+	$("#fivemin").show();
 }
 
-function backTo5minImage(){
-	$("#kultTreImage").hide();
-	$("#backgroundMap5min2").show();
+function peekMilestone(){
+	$("#fivemin").hide();
+	$("#fivemin_pop").show();
 }
 
-function milestonePopup(){
-	$("#backgroundMap5min2").hide();
-	$("#kultTreImage2").show();
+function walkTenMin(){
+	$("#fivemin_pop").hide();
+	$("#tenmin").show();
+}
+
+function milestoneAvailable(){
+	$("#tenmin").hide();
+	$("#milestone_available").show();
 }
 
 function showMilestoneForm(){
 	$("#milepalform").slideDown("fast");
 }
 
-function avsluttTur(){
-	alert("denne må implementeres");
+function closeMilepalpop() {
+	$("#milestone_available").hide();
+	$("#milestone_updated").show();
+	$("#milepalform").slideUp("fast");
 }
+
+function walkTwentyFiveMin(){
+	$("#milestone_updated").hide();
+	$("#twentyfivemin").show();
+
+}
+
+function walkToFinish(){
+	$("#twentyfivemin").hide();
+	$("#finish_pop").show();
+
+}
+
+function avsluttTurForm(){
+	$("#avsluttTurForm").slideDown("fast");
+}
+
+
+
+
+
+
+
+

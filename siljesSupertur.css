@@ -10,7 +10,7 @@ img#bg {
 {
 	border-style: outset;
 	height: 100%;
-	margin: 20px;
+	margin: 5px 20px 20px 20px;
 	background: white;
 	color: #444;
 
@@ -74,15 +74,17 @@ p.story {
 
 
 a.button_gaatur {
-	padding: 11px 0 13px;
-	font-size: 16px;
-	background: #39C099;
-	color: white;
-	text-transform: uppercase;
-	width: 100%;
-	border: none;
-	border-radius: 0px;
-	text-shadow: none;
+	padding: 16px 0 13px;
+font-size: 20px;
+background: #39C099;
+color: white;
+text-transform: uppercase;
+width: 100%;
+border: none;
+border-radius: 0px;
+text-shadow: none;
+margin-top: -5px;
+font-weight: normal;
 }
 
 a.button_gaatur:active {
@@ -479,8 +481,23 @@ color: #DDD;
 	margin: 6%;
 }
 
+.tripImages img {
+	width: 100%;
+}
 
+.datadisplay{
+	bottom: 5%;
+	width: 100%;
+	background: rgba(27, 27, 27, 0.8);
+	position: absolute;
+	padding: 10px 0px ;
+}
 
+.datatext{
+	color: white;
+	line-height: 1.5;
+	text-align: center;
+}
 
 
 

@@ -18,25 +18,35 @@ function next(){
 		$("#strekning").text("strekning: 2km");
 		$("#moh").text("m.o.h: 142");
 		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
+		$(".active_marker.start").hide();
+		console.log(teller)
 	}
 	else if(teller == 3 && finishedTaskOne){
-		alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
-		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
-	} else if(teller == 3){
-		teller--;
-		alert("Du må gjøre folk oppmerksomme på det store treet");
-	}
-	else if(teller == 4){
 		alert("Du har kommet til veis ende, og ønsker å avslutte turen");
+		$(".active_marker.milepael").hide();
+		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 		$("#tid").text("tid: 57min");
 		$("#strekning").text("strekning: 7km");
 		$("#moh").text("m.o.h: 123");
 		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
+		console.log(teller)
+
+	} else if(teller == 3){
+		teller--;
+		alert("Du må gjøre folk oppmerksomme på det store treet");
+		console.log(teller)
 	}
+	// else if(teller == 4){
+	// 	alert("Du har kommet til veis ende, og ønsker å avslutte turen");
+		
+	// 	console.log(teller)
+	// }
 }
 
 function exit(){
 	var exitBoolean = confirm("Sikker på at du vil avslutte?");
+	$("#milepal").css({"display" : "none"});
+	$("#endepunkt").css({"display" : "none"});
 	if(exitBoolean == true){
 		$("#avsluttform").css('z-index', 10);
 		$("#avsluttform").css({"display" : "inline"});
@@ -63,8 +73,11 @@ function closeMilepal(){
 	blurMap(0);
 	if (teller == 2) {
 		finishedTaskOne = true;
-		next();
+		// next();
+		$(".active_marker.milepael").show();
+		alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
 	};
+
 }
 
 function closeEndepunkt(){
@@ -106,7 +119,7 @@ function showOptions(showBoolean){
 }
 
 function centerpep(){
-	$('.pep').css({"top":"50%", "left":"45%"});
+	$('.pep').css({"top":"50%", "left":"50%", "margin-left":"-20px;"});
 }
 
 $(document).ready(function(){
@@ -124,16 +137,16 @@ $(document).ready(function(){
 			if (obj.activeDropRegions.length != 0) {
 				blurMap();
 				if(obj.activeDropRegions[0].context.className == "droppable endepunkt pep-dpa"){
-					obj.moveTo("45%","50%",false);
+					obj.moveTo("50%","50%",false);
 					obj.resetVelocityQueue();
 					exit();
 				} else {
-					obj.moveTo("45%","50%",false);
+					obj.moveTo("50%","50%",false);
 					obj.resetVelocityQueue();
 					openMilepal();
 				}
 			} else {
-				obj.moveTo("45%","50%",false);
+				obj.moveTo("50%","50%",false);
 				obj.resetVelocityQueue();
 				showOptions(false);
 			}
