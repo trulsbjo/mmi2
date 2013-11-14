@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Milepæl</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  
+  
+  <script src="../jquery.js"></script>
+  <script src="../js/jquery-mustache.js"></script>
+  <script src="../js/mustache.js"></script>
+  <script src="../ratchet.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="../ratchet.css" />
+  <link rel="stylesheet" type="text/css" href="../Profile.css" />
+  <style type="text/css">
+    .circular {
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      background: url(../touch-icons/larsmonsen.png) no-repeat;
+      background-size: 100%;
+      margin-top: 60px;
+      }
+  </style>
+
+  <script>
+	var viewData = { 
+		'name': 'LARS MONSEN',
+		'tours_number': '123',
+    'tours': [
+      {'name': 'Monsens helgetur','length': '2d', 'exp': '||'}, 
+      {'name': 'Bymarka rundt','length': '50m', 'exp': '|'}, 
+      {'name': 'Trøndermasjen','length': '9t', 'exp': '|'}, 
+      {'name': 'Gråkallen rundt','length': '3t 15m', 'exp': '|'}, 
+      {'name': 'Monsens helgetur','length': '2d', 'exp': '||'},
+      {'name': 'Bymarka rundt','length': '50m', 'exp': '|'}, 
+      {'name': 'Trøndermasjen','length': '9t', 'exp': '|'}, 
+      {'name': 'Gråkallen rundt','length': '3t 15m', 'exp': '|'}
+    ],
+    'favorites': [
+      {'name': 'Gråkallen rundt','length': '3t 15m', 'exp': '|'}, 
+      {'name': 'Trøndermasjen','length': '9t', 'exp': '|'}, 
+      {'name': 'Bymarka rundt','length': '50m', 'exp': '|'}, 
+      {'name': 'Trøndermasjen','length': '9t', 'exp': '|'}, 
+      {'name': 'Monsens helgetur','length': '2d', 'exp': '||'}, 
+      {'name': 'Bymarka rundt','length': '50m', 'exp': '|'}, 
+      {'name': 'Gråkallen rundt','length': '3t 15m', 'exp': '|'},
+      {'name': 'Monsens helgetur','length': '2d', 'exp': '||'}
+    ],
+		'followers': '1003',
+		'follows': '24'
+	};
+	$.Mustache.load('profile.html').done(function () {
+        $('body').mustache('simple-hello', viewData);
+    });
+  </script>
+</head>
+
+<body class="profile">
+
+</body>
+</html>

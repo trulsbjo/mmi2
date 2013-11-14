@@ -1,0 +1,123 @@
+<script id="simple-hello" type="text/html">
+     <header class="bar-title">
+
+    <a class="button-prev" href="../Index.html">
+    </a>
+    <h1 class="title">{{name}}</h1>
+  </div>
+</header>
+
+<nav class="bar-tab">
+  <ul class="tab-inner">
+    <li class="tab-item active">
+      <a href="index.html">
+        <img class="tab-icon" src="../img/ikoner/nav_feed_aktiv.svg">
+      </a>
+      <div class="clear"></div>
+    </li>
+    <li class="tab-item">
+      <a href="utforsk.html">
+        <img class="tab-icon" src="../img/ikoner/nav_utforsk.svg">
+      </a>
+      <div class="clear"></div>
+    </li>
+    <li class="tab-item">
+      <a href="opprett.html">
+        <img class="tab-icon" src="../img/ikoner/nav_opprett.svg">
+      </a>
+      <div class="clear"></div>
+    </li>
+    <li class="tab-item">
+      <a href="profile.html">
+        <img class="tab-icon" src="../img/ikoner/nav_profil.svg">
+      </a>
+      <div class="clear"></div>
+    </li>
+  </ul>
+</nav>
+
+<div class="circular"></div>
+<div id="info_wrap">
+  <div>
+    <h1>{{tours_number}}</h1>
+    <h2>turer</h2>
+  </div>
+  <div>
+    <h1>{{followers}}</h1>
+    <h2>følgere</h2>
+  </div>
+  <div>
+    <h1>{{follows}}</h1>
+    <h2>følger</h2>
+  </div>
+</div>
+
+<div id="follow">følg</div>
+
+
+<ul class="segmented-controller">
+  <div class="list_header_wrap"></div>
+  <li class="active">
+    <a href="#item1">
+      <img src="../img/ikoner/bruker_turer.svg">
+    </a>
+    <span class="header turer">turer</span>
+  </li>
+  <li>
+    <a href="#item2">
+      <img src="../img/ikoner/bruker_favoritt.svg">
+    </a>
+    <span class="header favoritter">favoritter</span>
+  </li>
+  <li>
+    <a href="#item3">
+      <img src="../img/ikoner/bruker_stats.svg">
+    </a>
+    <span class="header stats">stats</span>
+  </li>
+</ul>
+
+<!-- Anything else - this is what scrolls -->
+<div class="content">
+
+
+
+
+  <ul class="inset">
+    <li id="item1" class="segmented-controller-item active">
+      <ul class="list">
+      {{#tours}}
+        <li>
+          <a href="#">
+            {{name}}
+            <div style="float: right">
+              <div style="float: left;">{{length}}</div>
+              <div style="float: right; margin-left: 40px;">{{exp}}</div>
+            </div>
+          </a>
+        </li>
+      {{/tours}}
+      </ul>
+    </li>
+    <li id="item2" class="segmented-controller-item">
+      <ul class="list">
+        {{#favorites}}
+        <li>
+          <a href="#">
+            {{name}}
+            <div style="float: right">
+              <div style="float: left;">{{length}}</div>
+              <div style="float: right; margin-left: 40px;">{{exp}}</div>
+            </div>
+          </a>
+        </li>
+       {{/favorites}}
+      </ul>
+
+
+    </li>
+    <li id="item3" class="segmented-controller-item">
+      Stats
+    </li>
+  </ul>
+</script>
