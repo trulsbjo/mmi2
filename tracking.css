@@ -127,18 +127,34 @@ transform: scale(1.5);
 	background-color: white;
 }
 
+#datatur {
+	height: 15px;
+padding: 10px 0px;
+background: #eee;
+margin-bottom: 20px;
+text-align: center;
+margin-top: -10px;
+font-size: 14px;
+}
 
+span#avsluttlengde {
+	margin-right: 20px;
+}
 
 .turform{
 	color: #444;
-	display:none;
-	position: fixed;
-	margin-top: 100px;
-	left: 50%;
-	margin-left: -120px;
-	background: white;
-	width: 240px;
-	padding: 10px 0px 0px 0px;
+display: none;
+position: fixed;
+margin-top: 100px;
+left: 50%;
+margin-left: -150px;
+background: white;
+width: 300px;
+padding: 10px 0px 0px 0px;
+}
+
+#avsluttform div img {
+	margin-left: 38px;
 }
 
 .turform .header {
@@ -160,7 +176,7 @@ transform: scale(1.5);
 	width: 80px;
 	height: 80px;
 	float: left;
-	margin-left: 15px;
+	margin-left: 45px;
 }
 
 .turform form {
@@ -232,4 +248,85 @@ span.onetracking{
 	text-align: center;
 	margin-left: 0px!important;
 	color: #BD4349;
+}
+
+#difficultyPreference {
+	font-size: 16px;
+margin: 13px 0px 20px;
+height: 42px;
+line-height: 2.7;
+padding-left: 11px;
+}
+
+
+#containerForDifficulty
+{
+	height: 40px;
+	/*width: 125px;*/
+	background: none;
+	  -webkit-border-radius: 20px;
+	  -moz-border-radius: 20px;
+	  border-radius: 20px;
+	  border: 1px solid #DDD;
+	  height: 40px;
+	  padding: 0px 0px;
+	float: right;
+	position: relative;
+	line-height: 1;
+}
+
+#containerForDifficulty span {
+	padding: 12px 9px 8px 9px;
+margin-left: 5px;
+cursor: pointer;
+color: #DDD;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+width: 22px;
+height: 20px;
+float: left;
+text-align: center;
+}
+
+
+.circle
+{
+	margin-top: -1px;
+	background: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  border-radius: 20px;
+  border: 1px solid #DDD;
+  width: 40px;
+  height: 40px;
+	position: absolute;
+	-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+left: -1px;
+}
+
+span.x
+{	
+	margin-left: 0px!important;
+	color: #BD4349;
+	
+}
+
+.one
+{
+	
+}
+
+.two
+{
+	
+}
+
+.three
+{
+	
 }

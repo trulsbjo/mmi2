@@ -9,7 +9,7 @@
   <script src="tracking.js"></script>
   <link rel="stylesheet" type="text/css" href="tracking.css" />
   <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="siljesSupertur.css" />
+ <!--  <link rel="stylesheet" type="text/css" media="all" href="siljesSupertur.css" /> -->
 </head>
 <body>
 
@@ -60,12 +60,13 @@
     <img src="img/ikoner/marker_stop.svg">
     <p>avslutt tur</p>
   </div> 
+  <div id="datatur">
+    <span id="avsluttlengde">STREKNING: 7km</span>
+    <span id="avslutttid">TID: 57min</span>
+  </div>
   <form >
    <input id="avslutttextfield" type="text" placeholder="Tittel p&#229; tur..." onclick=hei(2) readonly="true"><br>
-   <div id="datatur">
-    <p id="avsluttlengde">Strekning: 7km</p>
-    <p id="avslutttid">Tid: 57min</p>
-  </div>
+   
   <div id="difficultyPreference">
     <div style="float: left">Vanskelighet:</div>
     <div id="containerForDifficulty">
