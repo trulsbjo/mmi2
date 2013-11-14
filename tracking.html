@@ -40,9 +40,9 @@
       <img src="img/ikoner/marker_milepael.svg">
       <p>ny milep&#230l</p>
     </div>
-    <form >
-     <input type="text" placeholder="Tittel..."><br>
-     <input type="text" placeholder="Kommentar...">
+    <form > 
+     <input id="titteltextfield" type="text" placeholder="Tittel..." onclick=hei(0) readonly="true"><br>
+     <input id="kommentartextfield" type="text" placeholder="Kommentar..." onclick=hei(1) readonly="true">
    </form>
    <div id="tabilde">
     <p>Ta bilde: </p>
@@ -61,7 +61,7 @@
     <p>avslutt tur</p>
   </div> 
   <form >
-   <input type="text" placeholder="Tittel p&#229; tur..."><br>
+   <input id="avslutttextfield" type="text" placeholder="Tittel p&#229; tur..." onclick=hei(2) readonly="true"><br>
    <div id="datatur">
     <p id="avsluttlengde">Strekning: 7km</p>
     <p id="avslutttid">Tid: 57min</p>
@@ -75,7 +75,7 @@
       <span class="three" onclick="moveCircleToThree()">|||</span>
     </div> 
   </div>
-  <input type="text" placeholder="Beskrivelse...">
+  <input id="avsluttkommentartextfield" type="text" placeholder="Beskrivelse..." onclick=hei(3) readonly="true">
 </form>
 <div id="milepalknapper">
   <button id="forkastknapp" onClick="closeEndepunkt()">FORKAST</button>

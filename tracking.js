@@ -10,6 +10,22 @@ Tilstander til teller:
 var teller = 1;
 var finishedTaskOne = false;
 
+function hei(number){
+	if(number == 0){
+		$("#titteltextfield").val("Stoooort tre!!!!");
+	}
+	else if(number == 1){
+		$("#kommentartextfield").val("Herreugd, største jeg har sett");
+	}
+	else if(number == 2){
+		$("#avslutttextfield").val("Big tree");
+	}
+	else if(number == 3){
+		$("#avsluttkommentartextfield").val("Spennende tur i bymarka");
+	}
+	
+}
+
 function next(){
 	teller++;
 	if (teller == 2) {
