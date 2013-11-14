@@ -499,6 +499,12 @@ color: #DDD;
 	text-align: center;
 }
 
+#userText {
+	position: absolute;
+left: 87px;
+top: 21px;
+}
+
 
 
 
