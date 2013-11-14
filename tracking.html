@@ -9,6 +9,7 @@
   <script src="tracking.js"></script>
   <link rel="stylesheet" type="text/css" href="tracking.css" />
   <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="utforsk.css" />
 </head>
 <body>
 
@@ -64,6 +65,15 @@
    <div id="datatur">
     <p id="avsluttlengde">16km</p>
     <p id="avslutttid">93min</p>
+    <div id="difficultyPreference">
+  <div> Vanskelighet: </div>
+  <div id="containerForDifficulty">
+    <div class="circle"></div>
+    <span class="onetracking" onclick="moveCircleToX()">|</span>
+    <span class="two" onclick="moveCircleToOne()">||</span>
+    <span class="three" onclick="moveCircleToTwo()">|||</span>
+  </div> 
+</div>
   </div>
   <input type="text" placeholder="Beskrivelse...">
 </form>

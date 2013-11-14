@@ -163,3 +163,60 @@ $(document).ready(function(){
 function openCamera(){
 	alert("Denne funksjonen er ikke implementert");
 }
+
+var liDefault = $(".default");
+	liEasy = $(".easy");
+	liMedium = $(".medium");
+	liHard = $(".hard");
+
+function moveCircleToX(){
+	$(".circle").css({
+		"left":"-1px"
+	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#BD4349"});
+	liDefault.show();
+	liEasy.hide();
+	liMedium.hide();
+	liHard.hide();
+}
+
+function moveCircleToOne(){
+	$(".circle").css({
+		"left":"37px"
+	});
+	$(".one").css({"color":"white"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#BD4349"});
+	liDefault.hide();
+	liEasy.show();
+	liMedium.hide();
+	liHard.hide();
+}
+
+function moveCircleToTwo(){
+	$(".circle").css({
+		"left":"82px"
+	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"white"});
+	$(".three").css({"color":"#BD4349"});
+	liDefault.hide();
+	liEasy.hide();
+	liMedium.show();
+	liHard.hide();
+}
+
+function moveCircleToThree(){
+	$(".circle").css({
+		"left":"132px"
+	});
+	$(".one").css({"color":"#BD4349"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"white"});
+	liDefault.hide();
+	liEasy.hide();
+	liMedium.hide();
+	liHard.show();
+}
