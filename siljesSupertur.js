@@ -163,7 +163,7 @@ function walkTwentyFiveMin(){
 }
 
 function walkToFinish(){
-	$("#	twentyfivemin").hide();
+	$("#twentyfivemin").hide();
 	$("#finish_pop").show();
 	$("#tid").text("tid: 35min");
 	$("#strekning").text("strekning: 3,2km");
