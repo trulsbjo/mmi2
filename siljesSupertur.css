@@ -83,15 +83,14 @@ width: 100%;
 border: none;
 border-radius: 0px;
 text-shadow: none;
-margin-top: -5px;
 font-weight: normal;
+margin-top: -51px;
 }
 
 a.button_gaatur:active {
-	padding: 11px 0 13px;
-	margin-bottom: 10px;
-	font-size: 16px;
-	background: #39C099;
+	padding: 16px 0 13px;
+font-size: 20px;
+background: #39C099;
 	color: white;
 	text-transform: uppercase;
 	width: 100%;
@@ -431,6 +430,7 @@ left: 43px;
 
 span.x
 {	
+	background: url(img/ikoner/sad.png) -10px -9px no-repeat;
 	padding: 0px 0px 0px 2px!important;
 	width: 34px;
 	height: 38px;
@@ -442,28 +442,49 @@ span.x
 	
 }
 
-span.two
-{	padding: 0px 0px 0px 0px!important;
-width: 36px;
-height: 38px;
-float: left;
-text-align: center;
-color: #DDD;
-left: 50%;
-margin-left: -19px!important;
+/*span.x.aktiv*/
+/*{	
+	background: url(img/ikoner/sad_aktiv.svg) -7px -4px no-repeat;
+background-size: 50px;
 	
+}*/
+
+span.normal {	
+	background: url(img/ikoner/normal.png) -12px -8px no-repeat;
+	padding: 0px 0px 0px 0px!important;
+	width: 36px;
+	height: 38px;
+	float: left;
+	text-align: center;
+	color: #DDD;
+	left: 50%;
+	margin-left: -19px!important;
 }
 
+/*span.two.aktiv
+{	
+	background: url(img/ikoner/normal.png) -5px -4px no-repeat;
+background-size: 50px;
+	
+}*/
+
 span.three
-{	padding: 0px 0px 0px 2px!important;
+{	
+background: url(img/ikoner/happy.png) -11px -9px no-repeat;
+padding: 0px 0px 0px 2px!important;
 width: 34px;
 height: 38px;
 float: left;
 text-align: center;
 color: #DDD;
-	right: 3px;
+right: 3px;
 	
 }
+
+/*span.three.aktiv {
+	background: url(img/ikoner/happy_aktiv.svg) -5px -4px no-repeat;
+background-size: 50px;
+}*/
 
 #completeForm {
 	width: 100%;

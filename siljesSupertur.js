@@ -44,61 +44,64 @@ function startTracking(){
 // };
 
 $("#commentbutton").click(function() {
-	  $("#commentform").show();
-	  $("#submit_comment").show();
+	  // $("#commentform").show();
+	  // $("#submit_comment").show();
 	  $("#testuser").show();
 	  $(this).hide();
-	  $( "#commentform textarea" ).focus();
-});
-
-$("#submit_comment").click(function() {
-	  $("#commentform textarea").hide();
+	  // $( "#commentform textarea" ).focus();
 	  $("#usercomment").show();
-	  $(this).hide();
+	  $("#tesuser").show();
+	  // $(this).hide();
 });
 
-function moveCircleToX(){
+// $("#submit_comment").click(function() {
+// 	  $("#commentform textarea").hide();
+// 	  $("#usercomment").show();
+// 	  $(this).hide();
+// });
+
+function moveCircleToX2(){
 	$(".circle").css({
 		"left":"-1px",
 		"border-color":"#BD4349"
 	});
-	$(".x").css({"color":"#BD4349"});
-	$(".two").css({"color":"#DDD"});
-	$(".three").css({"color":"#DDD"});
+	$(".x").css({"background":"url(img/ikoner/sad_aktiv.png) -10px -9px no-repeat"});
+	$(".normal").css({"background":"url(img/ikoner/normal.png) -12px -8px no-repeat"});
+	$(".three").css({"background":"url(img/ikoner/happy.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
-
+	console.log("hurra");
 }
 
-function moveCircleToOne(){
-	$(".circle").css({
-		"left":"37px",
-		"border-color":"#BD4349"
-	});
-	$(".x").css({"color":"#BD4349"});
-	$(".two").css({"color":"#DDD"});
-	$(".three").css({"color":"#DDD"});
-	$("#containerForDifficulty").css({"border-color":"#BD4349"});
-}
+// function moveCircleToOne(){
+// 	$(".circle").css({
+// 		"left":"37px",
+// 		"border-color":"#BD4349"
+// 	});
+// 	$(".x").css({"background":"url(img/ikoner/sad_aktiv.svg) -7px 4px no-repeat", "background-size" : "50px"});
+// 	$(".two").css({"background":"url(img/ikoner/normal.svg) -5px -4px no-repeat", "background-size" : "50px"});
+// 	$(".three").css({"background":"url(img/ikoner/happy.svg) -5px -4px no-repeat" , "background-size" : "50px"});
+// 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+// }
 
-function moveCircleToTwo(){
+function moveCircleToTwo2(){
 	$(".circle").css({
 		"left":"43px",
 		"border-color":"#BD4349"
 	});
-	$(".x").css({"color":"#DDD"});
-	$(".two").css({"color":"#BD4349"});
-	$(".three").css({"color":"#DDD"});
+	$(".x").css({"background":"url(img/ikoner/sad.png) -10px -9px no-repeat"});
+	$(".normal").css({"background":"url(img/ikoner/normal_aktiv.png) -12px -8px no-repeat"});
+	$(".three").css({"background":"url(img/ikoner/happy.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
 
-function moveCircleToThree(){
+function moveCircleToThree2(){
 	$(".circle").css({
 		"left":"89px",
 		"border-color":"#BD4349"
 	});
-	$(".x").css({"color":"#DDD"});
-	$(".two").css({"color":"#DDD"});
-	$(".three").css({"color":"#BD4349"});
+	$(".x").css({"background":"url(img/ikoner/sad.png) -10px -9px no-repeat"});
+	$(".normal").css({"background":"url(img/ikoner/normal.png) -12px -8px no-repeat"});
+	$(".three").css({"background":"url(img/ikoner/happy_aktiv.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
 
@@ -179,10 +182,10 @@ function avsluttTur(){
 	window.location.href = "Index.html"
 }
 
-function pasteTextToCommentfield(){
-	var tekst = $("#tekstfelt").val();
-	$("#userText").text(tekst);
-}
+// function pasteTextToCommentfield(){
+// 	var tekst = $("#tekstfelt").val();
+// 	$("#userText").text(tekst);
+// }
 
 
 
