@@ -76,7 +76,7 @@
           <div class="smallerFrame">
 
             <div class="turinfo_wrap">
-              <h2>Siljes supertur</h2>
+              <h2>Olas rusletur</h2>
               <!-- Bilde for å legge til som favoritt-tur -->
               <img src="img/ikoner/favoritt_inaktiv.svg" class="addToFavorite" name="star" width="40px" height="40px" onclick="addToFavorite()">
               <div class="infoOmTur">
@@ -87,7 +87,7 @@
             </div>
 
             <div class="map">
-              <img src="img/map.png" name="kartOverTur">
+              <img src="img/map2.png" name="kartOverTur">
             </div>
             <a class="button_gaatur" onclick="startTracking()">GÅ TUR</a>
           </div> 
@@ -97,18 +97,18 @@
           <div class="smallerFrame">
 
             <div class="turinfo_wrap">
-              <h2>Siljes supertur</h2>
+              <h2>Markastien</h2>
               <!-- Bilde for å legge til som favoritt-tur -->
               <img src="img/ikoner/favoritt_inaktiv.svg" class="addToFavorite" name="star" width="40px" height="40px" onclick="addToFavorite()">
               <div class="infoOmTur">
                 <p class="attributes"><span class="tid">2t</span> <span class="lengde">1,5km</span>  <span class="nivaa">| lett</span></p>
-                <p class="story">Fin rusletur for skikkelig overskudd!</p>
+                <p class="story">Denne er grei og kort!</p>
                 <a href="http://rp.atb.no/scripts/TravelMagic/TravelMagicWE.dll?lang=no" >Se bussrute</a>
               </div>
             </div>
 
             <div class="map">
-              <img src="img/map.png" name="kartOverTur">
+              <img src="img/map3.png" name="kartOverTur">
             </div>
             <a class="button_gaatur" onclick="startTracking()">GÅ TUR</a>
           </div> 
@@ -118,18 +118,18 @@
           <div class="smallerFrame">
 
             <div class="turinfo_wrap">
-              <h2>Siljes supertur</h2>
+              <h2>Bymarka rundt</h2>
               <!-- Bilde for å legge til som favoritt-tur -->
               <img src="img/ikoner/favoritt_inaktiv.svg" class="addToFavorite" name="star" width="40px" height="40px" onclick="addToFavorite()">
               <div class="infoOmTur">
-                <p class="attributes"><span class="tid">2t</span> <span class="lengde">1,5km</span>  <span class="nivaa">| lett</span></p>
-                <p class="story">Fin rusletur for skikkelig overskudd!</p>
+                <p class="attributes"><span class="tid">5t</span> <span class="lengde">8,5km</span>  <span class="nivaa">| lett</span></p>
+                <p class="story">En skikkelig runde som passer når du har fri!</p>
                 <a href="http://rp.atb.no/scripts/TravelMagic/TravelMagicWE.dll?lang=no" >Se bussrute</a>
               </div>
             </div>
 
             <div class="map">
-              <img src="img/map.png" name="kartOverTur">
+              <img src="img/map4.png" name="kartOverTur">
             </div>
             <a class="button_gaatur" onclick="startTracking()">GÅ TUR</a>
           </div> 
@@ -143,11 +143,24 @@
 
     <div class="tripImages" >
       <div class="scenario3.2">
-        <img id="backgroundMap5min" src="img/5min.png" style="display: none" onclick="showMilestone()">
-        <img id="kultTreImage" src="img/kultTre.png" style="display: none" onclick="backTo5minImage()">
-        <img id="backgroundMap5min2" src="img/5min.png" style="display: none" onclick="milestonePopup()">
-        <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="showMilestoneForm()">
+        <img id="0min" src="img/0min.png" style="display: none" onclick="walkFiveMin()">
+        <img id="fivemin" src="img/5min.png" style="display: none" onclick="peekMilestone()">
+        <img id="fivemin_pop" src="img/5min_pop.png" style="display: none" onclick="walkTenMin()">
+        <img id="tenmin" src="img/10min.png" style="display: none" onclick="milestoneAvailable()">
+        <img id="milestone_available" src="img/15min_pop.png" style="display: none" onclick="showMilestoneForm()">
+        <img id="milestone_updated" src="img/17min_pop.png" style="display: none" onclick="walkTwentyFiveMin()">
+        <img id="twentyfivemin" src="img/25min.png" style="display: none" onclick="walkToFinish()">
+        <img id="finish_pop" src="img/finish_pop.png" style="display: none" onclick="avsluttTurForm()">
        <!--  <img id="kultTreImage2" src="img/kultTreBlur.png" style="display: none" onclick="goToUtforsk()"> -->
+      </div>
+    </div>
+    <div class="datadisplay">
+      <div> 
+        <p id="tid" class="datatext">tid: 0min</p>
+      </div>
+      <div>
+        <p id="strekning" class="datatext">strekning: 0km</p>
+        <p id="moh" class="datatext">m.o.h: 107</p>
       </div>
     </div>
 
@@ -189,7 +202,7 @@
       
       </div>
       <div>
-      <button id="kryssknapp" onClick="closeMilepal()">LUKK</button>
+      <button id="kryssknapp" onClick="closeMilepalpop()">LUKK</button>
       </div>
     </div>
 

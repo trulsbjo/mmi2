@@ -648,7 +648,9 @@
       this.offset.top = this.$el.css('top');
 
     if ( this.options.removeMargins )
-      this.$el.css({margin: 0});
+      this.$el.css({"margin-left": "-20px",
+                    "margin-top":"-20px"
+                  });
     
     this.$el.css({
       position:   'absolute',
