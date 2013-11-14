@@ -389,7 +389,7 @@ a {
 }*/
 
 /* Active states for the directional buttons */
-.bar-title .button-prev:active,
+/*.bar-title .button-prev:active,
 .bar-title .button-next:active,
 .bar-title .button-prev:active:before,
 .bar-title .button-next:active:before {
@@ -406,7 +406,7 @@ a {
 }
 .bar-title .button-next:active:before {
   box-shadow: inset 0 -3px 3px rgba(0, 0, 0, .2);
-}
+}*/
 
 /* Block buttons in any bar
 -------------------------------------------------- */
