@@ -154,3 +154,9 @@ function moveCircleToThree(){
 	liMedium.hide();
 	liHard.show();
 }
+
+function textfield(number){
+	if(number == 0){
+		$("#searchtextfield").val("Geir Ove");
+	}
+}
