@@ -32,6 +32,8 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   	$("#drag").show();
   	$("#dragarrow").show();
   	$("#dragzero").hide();
+  	$(".timeUnder50min").hide();
+  	$(".default").show();
   }
 
   else if(value>=1000){
@@ -47,7 +49,11 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   	$("#drag").hide();
   	$("#dragarrow").hide();
   	$("#dragzero").show();
-	  
+  	$(".default").hide();
+	$(".easy").hide();
+	$(".medium").hide();
+	$(".timeUnder50min").hide();
+	$(".timeOver50min").show();
   }
 
 
@@ -65,7 +71,11 @@ $("#sliderbarForTime").bind("slider:changed", function (event, data) {
   	$("#drag").hide();
   	$("#dragarrow").hide();
   	$("#dragzero").show();
-	  
+	$(".default").hide();
+	$(".easy").hide();
+	$(".medium").hide();
+	$(".timeOver50min").hide();
+	$(".timeUnder50min").show(); 
   }
 
   else{
