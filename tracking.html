@@ -9,7 +9,7 @@
   <script src="tracking.js"></script>
   <link rel="stylesheet" type="text/css" href="tracking.css" />
   <link rel="stylesheet" type="text/css" media="all" href="ratchet.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="utforsk.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="siljesSupertur.css" />
 </head>
 <body>
 
@@ -56,24 +56,24 @@
 
 <!-- AVSLUTT FORM FORM -->
 <div class="turform" id="avsluttform">
-<div class="header">
-      <img src="img/ikoner/marker_stop.svg">
-      <p>avslutt tur</p>
-    </div> 
+  <div class="header">
+    <img src="img/ikoner/marker_stop.svg">
+    <p>avslutt tur</p>
+  </div> 
   <form >
    <input type="text" placeholder="Tittel p&#229; tur..."><br>
    <div id="datatur">
-    <p id="avsluttlengde">16km</p>
-    <p id="avslutttid">93min</p>
-    <div id="difficultyPreference">
-  <div> Vanskelighet: </div>
-  <div id="containerForDifficulty">
-    <div class="circle"></div>
-    <span class="onetracking" onclick="moveCircleToX()">|</span>
-    <span class="two" onclick="moveCircleToOne()">||</span>
-    <span class="three" onclick="moveCircleToTwo()">|||</span>
-  </div> 
-</div>
+    <p id="avsluttlengde">Strekning: 7km</p>
+    <p id="avslutttid">Tid: 57min</p>
+  </div>
+  <div id="difficultyPreference">
+    <div style="float: left">Vanskelighet:</div>
+    <div id="containerForDifficulty">
+      <div class="circle"></div>
+      <span class="x" onclick="moveCircleToX()">|</span>
+      <span class="two" onclick="moveCircleToTwo()">||</span>
+      <span class="three" onclick="moveCircleToThree()">|||</span>
+    </div> 
   </div>
   <input type="text" placeholder="Beskrivelse...">
 </form>

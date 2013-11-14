@@ -359,7 +359,7 @@ a {
 }
 
 /* Pointed part of directional button */
-.bar-title .button-prev:before,
+/*.bar-title .button-prev:before,
 .bar-title .button-next:before {
   position: absolute;
   top: 2px;
@@ -386,7 +386,7 @@ a {
   border-top: 1.5px solid rgba(255, 255, 255, .25);
   -webkit-transform: rotate(135deg) skew(-10deg, -10deg);
           transform: rotate(135deg) skew(-10deg, -10deg);
-}
+}*/
 
 /* Active states for the directional buttons */
 .bar-title .button-prev:active,

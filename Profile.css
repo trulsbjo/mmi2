@@ -45,17 +45,28 @@
 }
 
 #follow {
-	width: 80px;
-	padding: 5px 10px;
+	width: 70px;
+	padding: 5px 0px 5px 20px;
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 20px;
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
-	color: rgba(0,0,0,0.2);
 	border: 1px solid rgba(0,0,0,0.1);
 
+}
+
+#follow.inaktiv {
+	background: url(img/ikoner/check.svg) 4px -2px no-repeat;
+background-size: 30px;
+	color: rgba(0,0,0,0.2);
+}
+
+#follow.aktiv {
+	background: url(img/ikoner/check_aktiv.svg) 4px -2px no-repeat;
+background-size: 30px;
+	color: white;
 }
 
 
@@ -92,7 +103,17 @@
 	bottom: -27px;
 }
 
-.segmented-controller li.active span.header {
+.segmented-controller li img.arrow {
+	display: none;
+	height: 16px;
+	width: 32px;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.segmented-controller li.active span.header, .segmented-controller li.active img.arrow {
 	display: block;
 }
 
@@ -110,4 +131,25 @@ span.header.stats {
 	width: 80px;
 	margin-left: -40px;
 }
+
+.bar-title .button-prev {
+	background: url(img/ikoner/nav_arrow.svg) 3px -21px no-repeat;
+	background-size: 75px;
+	height: 100%;
+	margin-top: 0px;
+	padding: 0px;
+	width: 75px;
+	border: none;
+	box-shadow: none;
+
+}
+
+
+
+
+
+
+
+
+
 

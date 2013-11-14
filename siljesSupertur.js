@@ -22,6 +22,7 @@ function startTracking(){
 
 	$(".avsluttTurButton").show();
 	$("#0min").show();
+	$(".datadisplay").show();
 }
 
 // function comment(){
@@ -113,6 +114,9 @@ function goToUtforsk(){
 function walkFiveMin(){
 	$("#0min").hide();
 	$("#fivemin").show();
+	$("#tid").text("tid: 5min");
+	$("#strekning").text("strekning: 0,5km");
+	$("#moh").text("m.o.h: 123");
 }
 
 function peekMilestone(){
@@ -123,11 +127,17 @@ function peekMilestone(){
 function walkTenMin(){
 	$("#fivemin_pop").hide();
 	$("#tenmin").show();
+	$("#tid").text("tid: 10min");
+	$("#strekning").text("strekning: 1km");
+	$("#moh").text("m.o.h: 130");
 }
 
 function milestoneAvailable(){
 	$("#tenmin").hide();
 	$("#milestone_available").show();
+	$("#tid").text("tid: 15min");
+	$("#strekning").text("strekning: 1,1km");
+	$("#moh").text("m.o.h: 135");
 }
 
 function showMilestoneForm(){
@@ -138,17 +148,26 @@ function closeMilepalpop() {
 	$("#milestone_available").hide();
 	$("#milestone_updated").show();
 	$("#milepalform").slideUp("fast");
+	$("#tid").text("tid: 17min");
+	$("#strekning").text("strekning: 1,2km");
+	$("#moh").text("m.o.h: 120");
 }
 
 function walkTwentyFiveMin(){
 	$("#milestone_updated").hide();
 	$("#twentyfivemin").show();
+	$("#tid").text("tid: 25min");
+	$("#strekning").text("strekning: 2,3km");
+	$("#moh").text("m.o.h: 101");
 
 }
 
 function walkToFinish(){
-	$("#twentyfivemin").hide();
+	$("#	twentyfivemin").hide();
 	$("#finish_pop").show();
+	$("#tid").text("tid: 35min");
+	$("#strekning").text("strekning: 3,2km");
+	$("#moh").text("m.o.h: 153");
 
 }
 
