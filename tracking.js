@@ -10,7 +10,7 @@ Tilstander til teller:
 var teller = 1;
 var finishedTaskOne = false;
 
-function hei(number){
+function textfield(number){
 	if(number == 0){
 		$("#titteltextfield").val("Stoooort tre!!!!");
 	}
