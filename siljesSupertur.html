@@ -192,10 +192,10 @@
           <span class="time">3 timer siden</span>
           <span class="username">Per:</span> "Amazing, sjekk bildet mitt!"</li>
         <li><button id="commentbutton">kommenter</button><form id="commentform" style="display: none;"><img style="display: none;" class="profilepicture" id="testuser" src="touch-icons/geirove.png">
-       <textarea rows="1" placeholder="Kommenter..."></textarea>
+       <textarea id="tekstfelt" rows="1" placeholder="Kommenter..."></textarea>
       </form>
-      <button id="submit_comment" style="display: none;">ok</button>
-      <span id="usercomment" style="display: none;"><span class="time">nå</span><span class="username">Rolf:</span> Ligner på en elefant</span></li>
+      <button id="submit_comment" style="display: none;" onclick="pasteTextToCommentfield()">ok</button>
+      <span id="usercomment" style="display: none;"><span class="time">nå</span><span class="username">Rolf:</span> <div id="userText"> </div> </span></li>
       </ul>
        <!-- <input type="text" placeholder="Kommentar..."> -->
       <div>

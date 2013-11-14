@@ -156,9 +156,14 @@ function avsluttTurForm(){
 	$("#avsluttTurForm").slideDown("fast");
 }
 
+function avsluttTur(){
+	window.location.href = "Index.html"
+}
 
-
-
+function pasteTextToCommentfield(){
+	var tekst = $("#tekstfelt").val();
+	$("#userText").text(tekst);
+}
 
 
 
