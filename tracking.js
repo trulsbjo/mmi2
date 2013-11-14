@@ -164,59 +164,47 @@ function openCamera(){
 	alert("Denne funksjonen er ikke implementert");
 }
 
-var liDefault = $(".default");
-	liEasy = $(".easy");
-	liMedium = $(".medium");
-	liHard = $(".hard");
-
 function moveCircleToX(){
 	$(".circle").css({
-		"left":"-1px"
+		"left":"-1px",
+		"border-color":"#BD4349"
 	});
-	$(".one").css({"color":"#BD4349"});
-	$(".two").css({"color":"#BD4349"});
-	$(".three").css({"color":"#BD4349"});
-	liDefault.show();
-	liEasy.hide();
-	liMedium.hide();
-	liHard.hide();
+	$(".x").css({"color":"#BD4349"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
+
 }
 
 function moveCircleToOne(){
 	$(".circle").css({
-		"left":"37px"
+		"left":"37px",
+		"border-color":"#BD4349"
 	});
-	$(".one").css({"color":"white"});
-	$(".two").css({"color":"#BD4349"});
-	$(".three").css({"color":"#BD4349"});
-	liDefault.hide();
-	liEasy.show();
-	liMedium.hide();
-	liHard.hide();
+	$(".x").css({"color":"#BD4349"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
 
 function moveCircleToTwo(){
 	$(".circle").css({
-		"left":"82px"
+		"left":"43px",
+		"border-color":"#BD4349"
 	});
-	$(".one").css({"color":"#BD4349"});
-	$(".two").css({"color":"white"});
-	$(".three").css({"color":"#BD4349"});
-	liDefault.hide();
-	liEasy.hide();
-	liMedium.show();
-	liHard.hide();
+	$(".x").css({"color":"#DDD"});
+	$(".two").css({"color":"#BD4349"});
+	$(".three").css({"color":"#DDD"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
 
 function moveCircleToThree(){
 	$(".circle").css({
-		"left":"132px"
+		"left":"89px",
+		"border-color":"#BD4349"
 	});
-	$(".one").css({"color":"#BD4349"});
-	$(".two").css({"color":"#BD4349"});
-	$(".three").css({"color":"white"});
-	liDefault.hide();
-	liEasy.hide();
-	liMedium.hide();
-	liHard.show();
+	$(".x").css({"color":"#DDD"});
+	$(".two").css({"color":"#DDD"});
+	$(".three").css({"color":"#BD4349"});
+	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
