@@ -176,7 +176,7 @@ function avsluttTurForm(){
 }
 
 function avsluttTur(){
-	window.location.href = "Index.html"
+	window.location.href = "index3.html"
 }
 
 // function pasteTextToCommentfield(){
