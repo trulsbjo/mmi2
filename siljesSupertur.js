@@ -44,21 +44,18 @@ function startTracking(){
 // };
 
 $("#commentbutton").click(function() {
-	  // $("#commentform").show();
-	  // $("#submit_comment").show();
+	  $("#commentform").show();
+	  $("#submit_comment").show();
 	  $("#testuser").show();
 	  $(this).hide();
-	  // $( "#commentform textarea" ).focus();
-	  $("#usercomment").show();
-	  $("#tesuser").show();
 	  // $(this).hide();
 });
 
-// $("#submit_comment").click(function() {
-// 	  $("#commentform textarea").hide();
-// 	  $("#usercomment").show();
-// 	  $(this).hide();
-// });
+$("#commentform textarea").click(function() {
+	  $("#usercomment").show();
+	  $(this).hide();
+	  $("#submit_comment").hide	();
+});
 
 function moveCircleToX2(){
 	$(".circle").css({
