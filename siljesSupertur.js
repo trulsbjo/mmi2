@@ -22,7 +22,12 @@ function startTracking(){
 
 	$(".avsluttTurButton").show();
 	$("#0min").show();
+	$("#helpForm").show();
 	$(".datadisplay").show();
+}
+
+function zero(){
+	$("#helpForm").hide();
 }
 
 // function comment(){
