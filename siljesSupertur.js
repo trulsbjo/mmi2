@@ -22,12 +22,7 @@ function startTracking(){
 
 	$(".avsluttTurButton").show();
 	$("#0min").show();
-	$("#helpForm").show();
 	$(".datadisplay").show();
-}
-
-function zero(){
-	$("#helpForm").hide();
 }
 
 // function comment(){
@@ -71,7 +66,7 @@ function moveCircleToX2(){
 		"border-color":"#BD4349"
 	});
 	$(".x").css({"background":"url(img/ikoner/sad_aktiv.png) -10px -9px no-repeat"});
-	$(".normal").css({"background":"url(img/ikoner/normal.png) -12px -8px no-repeat"});
+	$(".normal").css({"background":"url(img/ikoner/normal.png) -5px -4px no-repeat"});
 	$(".three").css({"background":"url(img/ikoner/happy.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 	console.log("hurra");
@@ -94,7 +89,7 @@ function moveCircleToTwo2(){
 		"border-color":"#BD4349"
 	});
 	$(".x").css({"background":"url(img/ikoner/sad.png) -10px -9px no-repeat"});
-	$(".normal").css({"background":"url(img/ikoner/normal_aktiv.png) -12px -8px no-repeat"});
+	$(".normal").css({"background":"url(img/ikoner/normal_aktiv.png) -5px -4px no-repeat"});
 	$(".three").css({"background":"url(img/ikoner/happy.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
@@ -105,7 +100,7 @@ function moveCircleToThree2(){
 		"border-color":"#BD4349"
 	});
 	$(".x").css({"background":"url(img/ikoner/sad.png) -10px -9px no-repeat"});
-	$(".normal").css({"background":"url(img/ikoner/normal.png) -12px -8px no-repeat"});
+	$(".two").css({"background":"url(img/ikoner/normal.png) -5px -4px no-repeat"});
 	$(".three").css({"background":"url(img/ikoner/happy_aktiv.png) -11px -9px no-repeat"});
 	$("#containerForDifficulty").css({"border-color":"#BD4349"});
 }
@@ -192,8 +187,6 @@ function avsluttTur(){
 // 	$("#userText").text(tekst);
 // }
 
-function pasteAvsluttComment(){
-	$("#complete_text").val("Artig tur!");
-}
+
 
 

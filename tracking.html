@@ -21,7 +21,7 @@
     <div class="pep"></div>
     <div class="droppable milepal" style="display:none;" id="milepal"><img src="img/ikoner/marker_milepael.svg"><span>Milepæl</span></div>
     <div class="droppable endepunkt" style="display:none;" id="endepunkt"><img src="img/ikoner/marker_stop.svg"><span>Endepunkt</span></div>
-    <div class="datadisplay">
+    <div class="datadisplay" style="display: none;">
       <div> 
         <p id="tid" class="datatext">tid: 0min</p>
       </div>
@@ -29,10 +29,15 @@
         <p id="strekning" class="datatext">strekning: 0km</p>
         <p id="moh" class="datatext">m.o.h: 107</p>
       </div>
-    </div>
+    </div>  
   </div>
 
   <!-- OPPLÆRINGS FORM -->
+
+  <div class="turform" id="helpForm">
+      <img src="img/helpform.png">
+      <button id="understand" onclick="zero()">SKJØNNER</button>
+    </div>
 
   <!-- MILEPÆL FORM -->
   <div class="turform milepalform" id="milepalform">
@@ -53,6 +58,11 @@
     <button id="okknapp" onClick="closeMilepal()">PLASSER PUNKT</button>
   </div>
 </div>
+
+
+  
+
+
 
 <!-- AVSLUTT FORM FORM -->
 <div class="turform" id="avsluttform">

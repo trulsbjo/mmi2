@@ -7,6 +7,21 @@ Tilstander til teller:
 3: Bruker har akkurat lagt til milepæl, kartet viser et milepæl symbol
 */
 
+
+
+function zero(){
+	$("#helpForm").hide();
+	$(".datadisplay").show();
+	
+}
+
+
+
+
+
+
+
+
 var teller = 1;
 var finishedTaskOne = false;
 

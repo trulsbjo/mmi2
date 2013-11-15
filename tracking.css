@@ -330,3 +330,24 @@ span.x
 {
 	
 }
+
+#helpForm {
+	display: block;
+	display: block;
+margin-top: 50px;
+z-index: 1000;
+}
+
+#helpForm img {
+	width: 100%;
+}
+
+#helpForm button {
+	width: 100%;
+	text-align: center;
+	background: #39C099;
+	color: white;
+	margin: 0px;
+	padding: 15px 0px;
+	font-size: 16px;
+}
