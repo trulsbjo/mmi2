@@ -142,12 +142,14 @@ function milestoneAvailable(){
 
 function showMilestoneForm(){
 	$("#milepalform").slideDown("fast");
+	$(".datadisplay").hide();
 }
 
 function closeMilepalpop() {
 	$("#milestone_available").hide();
 	$("#milestone_updated").show();
 	$("#milepalform").slideUp("fast");
+	$(".datadisplay").show();
 	$("#tid").text("tid: 17min");
 	$("#strekning").text("strekning: 1,2km");
 	$("#moh").text("m.o.h: 120");
