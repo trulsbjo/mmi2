@@ -184,6 +184,10 @@ function avsluttTur(){
 // 	$("#userText").text(tekst);
 // }
 
+function pasteAvsluttComment(){
+	$("#complete_text").val("Kjempestas tur");
+}
+
 
 
 
