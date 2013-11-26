@@ -44,7 +44,7 @@ function textfield(number){
 function next(){
 	teller++;
 	if (teller == 2) {
-		alert("Du har nå gått et lite stykke. Rett foran deg ser du det største treet du har sett i hele ditt liv. Du ønsker å gjøre andre oppmerksomme på dette store treet");
+		//alert("Du har nå gått et lite stykke. Rett foran deg ser du det største treet du har sett i hele ditt liv. Du ønsker å gjøre andre oppmerksomme på dette store treet");
 		$("#tid").text("tid: 17min");
 		$("#strekning").text("strekning: 2km");
 		$("#moh").text("m.o.h: 142");
@@ -53,7 +53,7 @@ function next(){
 		console.log(teller)
 	}
 	else if(teller == 3 && finishedTaskOne){
-		alert("Du har kommet til veis ende, og ønsker å avslutte turen");
+		//alert("Du har kommet til veis ende, og ønsker å avslutte turen");
 		$(".active_marker.milepael").hide();
 		$("#bilde1").attr('src', 'img/track'+ teller +'.png');
 		$("#tid").text("tid: 57min");
@@ -64,7 +64,7 @@ function next(){
 
 	} else if(teller == 3){
 		teller--;
-		alert("Du må gjøre folk oppmerksomme på det store treet");
+		//alert("Du må gjøre folk oppmerksomme på det store treet");
 		console.log(teller)
 	}
 	// else if(teller == 4){
@@ -106,7 +106,7 @@ function closeMilepal(){
 		finishedTaskOne = true;
 		// next();
 		$(".active_marker.milepael").show();
-		alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
+		//alert("Flott! Du har lagt til milepæl. Trykk på kartet for å fortsette");
 	};
 
 }
