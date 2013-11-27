@@ -11,6 +11,8 @@ For at prototypen skal fungere må den kjøres i en nettleser. Startpunktet er I
 Man må også oppdatere siden i nettleseren når man klikker på en link til en annen HTML fil. 
 Dette kommer av begrensninger i rammeverkene vi har brukt.
 
+Man kan også slå av informasjonskapsler i nettleseren. Da blir flyten mye bedre, man slipper å oppdatere nettsidene hele tiden. Ulempen er at man ikke kan skifte mellom fanene i blant annet Utforsk. 
+
 ###Oppsett i Dropbox
 
   1. Last ned koden
