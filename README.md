@@ -1,7 +1,7 @@
 Milepæl
 ====
-
-  Interaktiv prototype for gruppe 1 i faget IT3402/TPD4134 - Design av grafiske brukergrensesnitt høst 2013
+Interaktiv prototype for gruppe 1 i faget IT3402/TPD4134 - Design av grafiske brukergrensesnitt høst 2013
+-----------
 
 ##Bruk
 For at prototypen skal fungere må den kjøres i en nettleser. Startpunktet er Index.html. For å få all funksjonalitet til
