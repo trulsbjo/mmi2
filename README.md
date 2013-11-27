@@ -11,6 +11,7 @@ Man må også oppdatere siden i nettleseren når man klikker på en link til en 
 Dette kommer av begrensninger i rammeverkene vi har brukt.
 
 ##Oppsett i Dropbox
+
   1 Last ned koden
   2 Legg koden inn i en ny mappe under Public mappen i Dropbox. 
   3 Høyreklikk på Index.html og velg Copy Public Link. 
